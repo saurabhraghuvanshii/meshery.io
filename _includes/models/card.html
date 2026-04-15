@@ -13,7 +13,7 @@
           data-modelicon-light="{{model.colorIcon}}"
           data-modelicon-dark="{{model.whiteIcon}}"
           src="{{model.colorIcon}}" 
-          onerror="this.src='/assets/images/meshery-color.svg'" 
+          onerror="this.src='{{ '/assets/images/meshery-color.svg' | relative_url }}'" 
           loading="lazy"/>
         </div>
       </div> 
