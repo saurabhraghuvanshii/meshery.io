@@ -12,7 +12,7 @@
 
 ## Meshery.io
 
-<div align="center">
+<div align="center">   
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/meshery/meshery.svg)](https://hub.docker.com/r/meshery/meshery-io)
 [![Go Report Card](https://goreportcard.com/badge/github.com/meshery/meshery)](https://goreportcard.com/report/github.com/mesheryio/meshery)
