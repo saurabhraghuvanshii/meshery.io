@@ -2,8 +2,8 @@
 # Site
 
 title: Meshery
-url: "${JEKYLL_SITE_URL}"
-baseurl: "${JEKYLL_BASEURL}"
+url: "https://meshery.io"
+baseurl: ""
 google_analytics_key: UA-152604689-1
 google_maps_javascript_api_key:
 disqus_shortname:

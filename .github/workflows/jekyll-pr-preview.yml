@@ -49,7 +49,11 @@ jobs:
           JEKYLL_SITE_URL: https://${{ github.repository_owner }}.github.io
           JEKYLL_BASEURL: /${{ github.event.repository.name }}/pr-preview/pr-${{ github.event.pull_request.number }}
         run: |
-          bundle exec jekyll build
+          cat > _config.ci.yml <<EOF
+          url: "${JEKYLL_SITE_URL}"
+          baseurl: "${JEKYLL_BASEURL}"
+          EOF
+          bundle exec jekyll build --config _config.yml,_config.ci.yml
 
           # Block crawlers from indexing PR previews.
           cat > _site/robots.txt <<'EOF'

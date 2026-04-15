@@ -34,10 +34,14 @@ jobs:
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production
-          JEKYLL_SITE_URL: ${{ vars.JEKYLL_SITE_URL || 'https://meshery.io' }}
-          JEKYLL_BASEURL: ${{ vars.JEKYLL_BASEURL || '' }}
+          JEKYLL_SITE_URL: ${{ vars.JEKYLL_SITE_URL || format('https://{0}.github.io', github.repository_owner) }}
+          JEKYLL_BASEURL: ${{ vars.JEKYLL_BASEURL || format('/{0}', github.event.repository.name) }}
         run: |
-          bundle exec jekyll build
+          cat > _config.ci.yml <<EOF
+          url: "${JEKYLL_SITE_URL}"
+          baseurl: "${JEKYLL_BASEURL}"
+          EOF
+          bundle exec jekyll build --config _config.yml,_config.ci.yml
           touch _site/.nojekyll
 
       - name: Deploy to GitHub Pages
