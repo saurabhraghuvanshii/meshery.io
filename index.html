@@ -595,14 +595,14 @@
     <div class="button-container home-integrations-actions">
         <a class="highlight show-all-button toggle-text"
             href="#integrations" aria-controls="integContainer" aria-expanded="false">Show All Integrations</a>
-        <a class="highlight show-all-button" href="/integrations">
+        <a class="highlight show-all-button" href="/meshery.io/integrations">
             View
             Integrations in 3D</a>
     </div>
 </div>
 
 <script type="module">
-	import data from "/integrations/data.js";
+	import data from "/meshery.io/integrations/data.js";
 	if (!data || !data.length) {
 		console.error("No integrations data");
 	}
@@ -623,7 +623,7 @@
 			.slice(0, cardsToShow)
 			.map(
 				(item) => `
-            <a href="${item.permalink}" class="integrations-card">
+            <a href="${window.siteBaseUrl || ''}${item.permalink}" class="integrations-card">
                 <div class="integrations-card-inner">
                     <div class="card-front">
                         <img src="${item.color || ''}" loading="lazy" alt="${item.name}" style="width: 100%; height: 100%; object-fit: contain;">
@@ -671,7 +671,7 @@
         <div class="image flex">
             <a style="width: auto;" href="" data-fancybox="images"
                 data-caption='Meshery includes both REST APIs and GraphQL APIs, pluggable adapters via gRPCs, hot-loadable ReactJS and hot-loadable Golang binaries. The great number of <a style="width:auto; href="https://docs.meshery.io/extensibility">extension points</a> in Meshery make it ideal as the foundation of your internal developer platform.'>
-                <img src="/assets/images/features/meshery-platform-engineering.webp" style="max-width:100%" alt="Meshery the Internal Developer Platform"
+                <img src="/meshery.io/assets/images/features/meshery-platform-engineering.webp" style="max-width:100%" alt="Meshery the Internal Developer Platform"
                     loading="lazy" class="screenshot"/>
             </a>
         </div>
@@ -779,7 +779,7 @@
         <div class="image flex" style="flex-flow: column wrap;">
             <div align="center" style="margin-top: 3rem;">
                 <div style="display: flex;">
-                    <img src="/assets/images/screens/multi-cluster-management.gif" class="screenshot" style="max-height: 50vh;"
+                    <img src="/meshery.io/assets/images/screens/multi-cluster-management.gif" class="screenshot" style="max-height: 50vh;"
                         alt="Multi-cluster Kubernetes Manager" loading="lazy" />
                     <span>
                 <!-- <p style="font-size: 1rem;margin:0rem;padding:0rem;color:#666;font-style: italic;">(excerpt: patterns
@@ -805,7 +805,7 @@
         <div class="image flex" style="flex-flow: column wrap;">
             <div align="center" style="margin-top: 3rem;">
                 <div style="display: flex;">
-                    <img src="/assets/images/features/workspace.gif" class="screenshot"
+                    <img src="/meshery.io/assets/images/features/workspace.gif" class="screenshot"
                         alt="Multi-cluster Kubernetes Manager" loading="lazy" />
                     <span>
                 <!-- <p style="font-size: 1rem;margin:0rem;padding:0rem;color:#666;font-style: italic;">(excerpt: patterns
@@ -830,7 +830,7 @@
         <div class="image flex" style="flex-flow: column wrap;">
             <div align="center" style="margin-top: 3rem;">
                 <div style="display: flex;">
-                    <img src="/assets/images/features/performance-metrics.gif" class="screenshot"
+                    <img src="/meshery.io/assets/images/features/performance-metrics.gif" class="screenshot"
                     alt="Multi-cluster Kubernetes Manager" loading="lazy" />
                     <span>
                 <!-- <p style="font-size: 1rem;margin:0rem;padding:0rem;color:#666;font-style: italic;">(excerpt: patterns
@@ -849,9 +849,9 @@
             <p>Whether managing multiple Meshery deployments, importing designs, discovering Kubernetes clusters, do so with ease using Meshery CLI in your terminal. <div class="button-para"><a href="https://docs.meshery.io/reference/mesheryctl/" class="highlight">View Docs</a></div></p>
         </div>
         <div class="image flex">
-            <a style="width: 100%;" href="/assets/images/features/ctl/mesheryctl-system-update.jpeg" data-fancybox="images"
+            <a style="width: 100%;" href="/meshery.io/assets/images/features/ctl/mesheryctl-system-update.jpeg" data-fancybox="images"
                 data-caption="Webassembly based Envoy Filters" aria-label="Webassembly based Envoy Filters">
-                <img src="/assets/images/features/ctl/mesheryctl-system-update.jpeg" class="screenshot" loading="lazy" alt="Webassembly based Envoy Filter image" />
+                <img src="/meshery.io/assets/images/features/ctl/mesheryctl-system-update.jpeg" class="screenshot" loading="lazy" alt="Webassembly based Envoy Filter image" />
             </a>
         </div>
     </div>
@@ -879,9 +879,9 @@
     <div class="container flex">
         <div class="text">
 <div style="display: flex;">
-                <img src="/assets/images/patterns/service-mesh-patterns-side-white.png"
-                     data-logo-for-light="/assets/images/patterns/service-mesh-patterns-side.svg"
-                     data-logo-for-dark="/assets/images/patterns/service-mesh-patterns-side-white.png"
+                <img src="/meshery.io/assets/images/patterns/service-mesh-patterns-side-white.png"
+                     data-logo-for-light="/meshery.io/assets/images/patterns/service-mesh-patterns-side.svg"
+                     data-logo-for-dark="/meshery.io/assets/images/patterns/service-mesh-patterns-side-white.png"
                      id="logo-dark-light"
                      alt="Cloud native design patterns"
                      style="height: 4rem;"
@@ -892,7 +892,7 @@
                 Design and manage all of your cloud native infrastructure using the design configurator in Meshery or start from a template using the patterns from the catalog.
             </p>
             <div class="button-para">
-                <a href="/catalog" class="highlight">View Complete Catalog</a>
+                <a href="/meshery.io/catalog" class="highlight">View Complete Catalog</a>
             </div>
         </div>
         <div class="image flex" style="flex-flow: column wrap;">
@@ -982,7 +982,7 @@
                 style="display: block;">
                 
 
-<a href="/catalog/deployment/vault-0-30-1-tgz-00fadfee-3655-40c7-8a38-6c5cd72ea4da.html">
+<a href="/meshery.io/catalog/deployment/vault-0-30-1-tgz-00fadfee-3655-40c7-8a38-6c5cd72ea4da.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1025,7 +1025,7 @@
                 style="display: block;">
                 
 
-<a href="/catalog/deployment/pod-readiness-0194ff83-0a43-4b83-9c75-b8f0f32da6b7.html">
+<a href="/meshery.io/catalog/deployment/pod-readiness-0194ff83-0a43-4b83-9c75-b8f0f32da6b7.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1068,7 +1068,7 @@
                 style="display: block;">
                 
 
-<a href="/catalog/deployment/example-labels-and-annotations-02413809-9fbf-4649-ae22-3d0947d264c6.html">
+<a href="/meshery.io/catalog/deployment/example-labels-and-annotations-02413809-9fbf-4649-ae22-3d0947d264c6.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1111,7 +1111,7 @@
                 style="display: block;">
                 
 
-<a href="/catalog/deployment/example-project-045bdba0-bc55-4bf8-8e54-1ae05ebd671c.html">
+<a href="/meshery.io/catalog/deployment/example-project-045bdba0-bc55-4bf8-8e54-1ae05ebd671c.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1154,7 +1154,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/dapr-04cf78e7-6041-45f7-bca5-999d5d7d6a19.html">
+<a href="/meshery.io/catalog/deployment/dapr-04cf78e7-6041-45f7-bca5-999d5d7d6a19.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1197,7 +1197,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pod-resource-request-05ff8dbb-2552-4a23-a6a8-318fe412bf30.html">
+<a href="/meshery.io/catalog/deployment/pod-resource-request-05ff8dbb-2552-4a23-a6a8-318fe412bf30.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1240,7 +1240,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/untitled-design-067737d5-1c7e-4135-b879-44cb4ed07876.html">
+<a href="/meshery.io/catalog/deployment/untitled-design-067737d5-1c7e-4135-b879-44cb4ed07876.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1283,7 +1283,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/istio-operator-06ef6097-8f21-4a76-b025-0c9271168814.html">
+<a href="/meshery.io/catalog/deployment/istio-operator-06ef6097-8f21-4a76-b025-0c9271168814.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1326,7 +1326,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/gcp-datamesh-070b4569-2b26-4e13-93f7-9992fdf1e6fd.html">
+<a href="/meshery.io/catalog/deployment/gcp-datamesh-070b4569-2b26-4e13-93f7-9992fdf1e6fd.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1369,7 +1369,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/accelerated-mtls-handshake-for-envoy-data-planes-075ec9ba-6ad7-4421-a09c-3b8edd5fb4a6.html">
+<a href="/meshery.io/catalog/deployment/accelerated-mtls-handshake-for-envoy-data-planes-075ec9ba-6ad7-4421-a09c-3b8edd5fb4a6.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1412,7 +1412,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/minecraft-app-081aa52c-7921-48dd-b81e-03f4ebfc70b5.html">
+<a href="/meshery.io/catalog/deployment/minecraft-app-081aa52c-7921-48dd-b81e-03f4ebfc70b5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1455,7 +1455,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/fault-tolerant-batch-workloads-on-gke-08379ae3-cd9e-4b55-a190-91a47a1ff638.html">
+<a href="/meshery.io/catalog/deployment/fault-tolerant-batch-workloads-on-gke-08379ae3-cd9e-4b55-a190-91a47a1ff638.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1498,7 +1498,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/default-ns-0a2d8c39-df40-490b-94b7-75d0fb7fc207.html">
+<a href="/meshery.io/catalog/deployment/default-ns-0a2d8c39-df40-490b-94b7-75d0fb7fc207.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1541,7 +1541,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/run-daemonset-on-gke-autopilot-0aa86dd0-415c-4bf8-ae76-832560470b74.html">
+<a href="/meshery.io/catalog/deployment/run-daemonset-on-gke-autopilot-0aa86dd0-415c-4bf8-ae76-832560470b74.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1584,7 +1584,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/apache-airflow-0b6b1ff8-cb2e-41d4-baff-e0a053f7e4d9.html">
+<a href="/meshery.io/catalog/deployment/apache-airflow-0b6b1ff8-cb2e-41d4-baff-e0a053f7e4d9.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1627,7 +1627,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-emails-worker-0-0-11-tgz-0b81f11d-da05-4638-9d48-0c8bcdb406e4.html">
+<a href="/meshery.io/catalog/deployment/ms-emails-worker-0-0-11-tgz-0b81f11d-da05-4638-9d48-0c8bcdb406e4.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1670,7 +1670,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/design-with-validation-errors-0d8d6d6d-362f-49e3-9a88-2d7e6aa20542.html">
+<a href="/meshery.io/catalog/deployment/design-with-validation-errors-0d8d6d6d-362f-49e3-9a88-2d7e6aa20542.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1713,7 +1713,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/untitled-design-0dcaacf8-3538-4cb3-b877-a80078af0378.html">
+<a href="/meshery.io/catalog/deployment/untitled-design-0dcaacf8-3538-4cb3-b877-a80078af0378.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1756,7 +1756,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/key-cloak-operator-0e426f91-14df-4f70-b6cc-ed3624d53ccd.html">
+<a href="/meshery.io/catalog/deployment/key-cloak-operator-0e426f91-14df-4f70-b6cc-ed3624d53ccd.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1799,7 +1799,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/3-tier-architecture-0e64cfa4-c8a4-4155-a8b1-bf21aa9e5107.html">
+<a href="/meshery.io/catalog/deployment/3-tier-architecture-0e64cfa4-c8a4-4155-a8b1-bf21aa9e5107.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1842,7 +1842,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/observerbalkubernetesworkloads-100a9ac6-9cb2-47e3-b960-6429674cdb04.html">
+<a href="/meshery.io/catalog/deployment/observerbalkubernetesworkloads-100a9ac6-9cb2-47e3-b960-6429674cdb04.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1885,7 +1885,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/aspnet-core-7-0-35-tgz-1012970d-bbf5-4bc5-b5e2-f6cb1da64b84.html">
+<a href="/meshery.io/catalog/deployment/aspnet-core-7-0-35-tgz-1012970d-bbf5-4bc5-b5e2-f6cb1da64b84.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1928,7 +1928,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/mtls-handshake-acceleration-for-istio-104be089-dae0-4d09-be70-c1d121673119.html">
+<a href="/meshery.io/catalog/deployment/mtls-handshake-acceleration-for-istio-104be089-dae0-4d09-be70-c1d121673119.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -1971,7 +1971,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hello-kubernetes-tutorial-107f4fc2-0655-4d00-be3d-164947159647.html">
+<a href="/meshery.io/catalog/deployment/hello-kubernetes-tutorial-107f4fc2-0655-4d00-be3d-164947159647.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2014,7 +2014,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/clickhouse-otel-hyperdx-arch-10919143-fe49-419d-9022-7906e75fe1bf.html">
+<a href="/meshery.io/catalog/deployment/clickhouse-otel-hyperdx-arch-10919143-fe49-419d-9022-7906e75fe1bf.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2057,7 +2057,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/oracle-e-commerce-microservices-on-kubernetes-10caf581-6498-4a1f-a00a-76011b60af48.html">
+<a href="/meshery.io/catalog/deployment/oracle-e-commerce-microservices-on-kubernetes-10caf581-6498-4a1f-a00a-76011b60af48.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2100,7 +2100,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/my-first-app-design-114c94c9-052b-46a2-86fe-4cdd2e88c746.html">
+<a href="/meshery.io/catalog/deployment/my-first-app-design-114c94c9-052b-46a2-86fe-4cdd2e88c746.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2143,7 +2143,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/dremio-helm-11d54f4a-129a-43f5-9c17-7e7518202ea6.html">
+<a href="/meshery.io/catalog/deployment/dremio-helm-11d54f4a-129a-43f5-9c17-7e7518202ea6.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2186,7 +2186,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kyverno-policy-engine-12250207-b931-43b6-b3c2-a3dbc0ab775a.html">
+<a href="/meshery.io/catalog/deployment/kyverno-policy-engine-12250207-b931-43b6-b3c2-a3dbc0ab775a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2229,7 +2229,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/gitlab-runner-deployment-129c524b-ead9-4170-b236-a1c9dd274ece.html">
+<a href="/meshery.io/catalog/deployment/gitlab-runner-deployment-129c524b-ead9-4170-b236-a1c9dd274ece.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2272,7 +2272,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/container-hierarchical-parent-alias-relationship-13e803b7-596c-4620-bdc4-4d3a28a027a2.html">
+<a href="/meshery.io/catalog/deployment/container-hierarchical-parent-alias-relationship-13e803b7-596c-4620-bdc4-4d3a28a027a2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2315,7 +2315,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/deployable-simple-web-architecture-design-147e429b-fe51-45b3-a275-a5940cb91882.html">
+<a href="/meshery.io/catalog/deployment/deployable-simple-web-architecture-design-147e429b-fe51-45b3-a275-a5940cb91882.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2358,7 +2358,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-filestorage-worker-design-17924ed6-4556-40c1-a019-53f343825014.html">
+<a href="/meshery.io/catalog/deployment/ms-filestorage-worker-design-17924ed6-4556-40c1-a019-53f343825014.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2401,7 +2401,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pod-multi-containers-17c46515-50ef-436c-9383-451e13348ddd.html">
+<a href="/meshery.io/catalog/deployment/pod-multi-containers-17c46515-50ef-436c-9383-451e13348ddd.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2444,7 +2444,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/resilient-web-app-189a3e71-8be9-4e64-9fed-150a9b1060de.html">
+<a href="/meshery.io/catalog/deployment/resilient-web-app-189a3e71-8be9-4e64-9fed-150a9b1060de.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2487,7 +2487,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kubernetes-workload-controllers-overview-1a9cfdfb-daaf-4c19-be93-6d9bc0f7b94d.html">
+<a href="/meshery.io/catalog/deployment/kubernetes-workload-controllers-overview-1a9cfdfb-daaf-4c19-be93-6d9bc0f7b94d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2530,7 +2530,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/aws-rds-controller-1abccf09-dcb8-46e4-8cac-f9e33c27516d.html">
+<a href="/meshery.io/catalog/deployment/aws-rds-controller-1abccf09-dcb8-46e4-8cac-f9e33c27516d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2573,7 +2573,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/katib-2-4-2-1c9730ce-b481-41c3-92ed-8044e1203f17.html">
+<a href="/meshery.io/catalog/deployment/katib-2-4-2-1c9730ce-b481-41c3-92ed-8044e1203f17.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2616,7 +2616,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/postgresql-cluster-1e2478e0-7611-4d4f-a44f-ea02cebf7b91.html">
+<a href="/meshery.io/catalog/deployment/postgresql-cluster-1e2478e0-7611-4d4f-a44f-ea02cebf7b91.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2659,7 +2659,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/doks-nginx-deployment-1f3c7dcd-e49a-4bf7-985a-661d6c64d8d7.html">
+<a href="/meshery.io/catalog/deployment/doks-nginx-deployment-1f3c7dcd-e49a-4bf7-985a-661d6c64d8d7.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2702,7 +2702,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/example-edge-network-relationship-1f79b0c6-2efe-4ee9-b08c-e1bd07a3926b.html">
+<a href="/meshery.io/catalog/deployment/example-edge-network-relationship-1f79b0c6-2efe-4ee9-b08c-e1bd07a3926b.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2745,7 +2745,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/horizontalpodautoscaler-1fa80124-d38d-41d1-a768-0fcb7cdae31e.html">
+<a href="/meshery.io/catalog/deployment/horizontalpodautoscaler-1fa80124-d38d-41d1-a768-0fcb7cdae31e.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2788,7 +2788,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/simple-kubernetes-pod-205a4fe3-1daf-4150-9062-3e7c81dde143.html">
+<a href="/meshery.io/catalog/deployment/simple-kubernetes-pod-205a4fe3-1daf-4150-9062-3e7c81dde143.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2831,7 +2831,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/litmus-chaos-operator-210422ee-a1c4-4844-9591-bab374608cba.html">
+<a href="/meshery.io/catalog/deployment/litmus-chaos-operator-210422ee-a1c4-4844-9591-bab374608cba.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2874,7 +2874,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/loxilb-k8s-external-load-balancer-2197b9bf-c48d-4394-873e-680a2ae35ed2.html">
+<a href="/meshery.io/catalog/deployment/loxilb-k8s-external-load-balancer-2197b9bf-c48d-4394-873e-680a2ae35ed2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2917,7 +2917,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/namespaces-in-kubernetes-22df0361-9be1-4e48-a3fb-f782ce900cbd.html">
+<a href="/meshery.io/catalog/deployment/namespaces-in-kubernetes-22df0361-9be1-4e48-a3fb-f782ce900cbd.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -2960,7 +2960,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/voting-app-22e28213-8c94-49d5-b104-3b7feee84b5e.html">
+<a href="/meshery.io/catalog/deployment/voting-app-22e28213-8c94-49d5-b104-3b7feee84b5e.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3003,7 +3003,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-microsoftgraph-rest-0-0-11-tgz-22f5ec4d-362f-423d-be53-ff4a34a80f4c.html">
+<a href="/meshery.io/catalog/deployment/ms-microsoftgraph-rest-0-0-11-tgz-22f5ec4d-362f-423d-be53-ff4a34a80f4c.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3046,7 +3046,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kubernetes-engine-training-example-23d03e32-4232-40f1-b953-0416e47b9b5d.html">
+<a href="/meshery.io/catalog/deployment/kubernetes-engine-training-example-23d03e32-4232-40f1-b953-0416e47b9b5d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3089,7 +3089,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/my-sql-with-cinder-vol-plugin-2512c0cb-385d-40de-b1f5-bc4a67131538.html">
+<a href="/meshery.io/catalog/deployment/my-sql-with-cinder-vol-plugin-2512c0cb-385d-40de-b1f5-bc4a67131538.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3132,7 +3132,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hashicorp-vault-254aa1d3-d972-4894-813a-f58fdd24021c.html">
+<a href="/meshery.io/catalog/deployment/hashicorp-vault-254aa1d3-d972-4894-813a-f58fdd24021c.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3175,7 +3175,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-locations-rest-0-0-11-tgz-2584ee1a-8f55-4b84-ad65-ee8514e3ec10.html">
+<a href="/meshery.io/catalog/deployment/ms-locations-rest-0-0-11-tgz-2584ee1a-8f55-4b84-ad65-ee8514e3ec10.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3218,7 +3218,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/edge-binding-permissions-relationship-27454352-6b1b-426e-830e-683b8c34b94e.html">
+<a href="/meshery.io/catalog/deployment/edge-binding-permissions-relationship-27454352-6b1b-426e-830e-683b8c34b94e.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3261,7 +3261,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/cryptomb-tls-handshake-acceleration-for-istio-28715e69-c6c1-4f96-bfa2-05113b00bae0.html">
+<a href="/meshery.io/catalog/deployment/cryptomb-tls-handshake-acceleration-for-istio-28715e69-c6c1-4f96-bfa2-05113b00bae0.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3304,7 +3304,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/double-bubble-map-28980b0e-fb2f-4b18-8a79-47c45b477ca3.html">
+<a href="/meshery.io/catalog/deployment/double-bubble-map-28980b0e-fb2f-4b18-8a79-47c45b477ca3.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3347,7 +3347,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hierarchical-parent-namespace-relationship-28e09dc6-de75-4c61-8531-e6e3744f7e98.html">
+<a href="/meshery.io/catalog/deployment/hierarchical-parent-namespace-relationship-28e09dc6-de75-4c61-8531-e6e3744f7e98.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3390,7 +3390,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/complete-kubernetes-application-pattern-294946e9-2079-4e6e-8a44-489fbdcf9e3f.html">
+<a href="/meshery.io/catalog/deployment/complete-kubernetes-application-pattern-294946e9-2079-4e6e-8a44-489fbdcf9e3f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3433,7 +3433,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/prometheus-operator-crd-cluster-roles-2a42de8b-3c58-4571-b092-2fda29ecfb1a.html">
+<a href="/meshery.io/catalog/deployment/prometheus-operator-crd-cluster-roles-2a42de8b-3c58-4571-b092-2fda29ecfb1a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3476,7 +3476,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/url-shortener-application-2a5bf8bd-d53a-4d8a-ba59-da43b0948b44.html">
+<a href="/meshery.io/catalog/deployment/url-shortener-application-2a5bf8bd-d53a-4d8a-ba59-da43b0948b44.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3519,7 +3519,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/clickhouse-9-4-4-tgz-2a9672d5-1690-49f8-ae3d-1010556d494b.html">
+<a href="/meshery.io/catalog/deployment/clickhouse-9-4-4-tgz-2a9672d5-1690-49f8-ae3d-1010556d494b.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3562,7 +3562,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/service-to-deployment-network-2aa761d3-cd30-419a-a441-2f042934116f.html">
+<a href="/meshery.io/catalog/deployment/service-to-deployment-network-2aa761d3-cd30-419a-a441-2f042934116f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3605,7 +3605,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/autogenerated-2b8ca8e9-b964-4102-8ee7-dbb2f1fbed49.html">
+<a href="/meshery.io/catalog/deployment/autogenerated-2b8ca8e9-b964-4102-8ee7-dbb2f1fbed49.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3648,7 +3648,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/match-labels-relationship-2d0a36b9-8170-4076-8aea-4fa6b28caf31.html">
+<a href="/meshery.io/catalog/deployment/match-labels-relationship-2d0a36b9-8170-4076-8aea-4fa6b28caf31.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3691,7 +3691,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/robot-shop-sample-app-2d54f372-10e5-4c4e-8d23-b9c35c68ce98.html">
+<a href="/meshery.io/catalog/deployment/robot-shop-sample-app-2d54f372-10e5-4c4e-8d23-b9c35c68ce98.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3734,7 +3734,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/wordpress-and-mysql-with-persistent-volume-on-kubernetes-2df29b2b-7e5e-4d8b-a5b3-3dea569f4d25.html">
+<a href="/meshery.io/catalog/deployment/wordpress-and-mysql-with-persistent-volume-on-kubernetes-2df29b2b-7e5e-4d8b-a5b3-3dea569f4d25.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3777,7 +3777,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/vpc-workflow-design-2f7597bd-9713-461e-b64f-c571415d2a86.html">
+<a href="/meshery.io/catalog/deployment/vpc-workflow-design-2f7597bd-9713-461e-b64f-c571415d2a86.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3820,7 +3820,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kafka-meshery-design-2f7c65a7-dc3d-4359-8bdf-3d5344ef64e8.html">
+<a href="/meshery.io/catalog/deployment/kafka-meshery-design-2f7c65a7-dc3d-4359-8bdf-3d5344ef64e8.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3863,7 +3863,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/all-relationships-2fdf5dcb-a3c0-4c2c-a64f-a3943ac87d5f.html">
+<a href="/meshery.io/catalog/deployment/all-relationships-2fdf5dcb-a3c0-4c2c-a64f-a3943ac87d5f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3906,7 +3906,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/weather-forecasting-app-3039deb0-7a26-4f4c-ab4c-a4c45a4f281c.html">
+<a href="/meshery.io/catalog/deployment/weather-forecasting-app-3039deb0-7a26-4f4c-ab4c-a4c45a4f281c.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3949,7 +3949,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/redis-php-guestbook-307373c2-a096-4b52-841e-fc18c3a5d17f.html">
+<a href="/meshery.io/catalog/deployment/redis-php-guestbook-307373c2-a096-4b52-841e-fc18c3a5d17f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -3992,7 +3992,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/delay-action-for-chaos-mesh-31ed2484-4aeb-4dcc-aa98-b61933d371cc.html">
+<a href="/meshery.io/catalog/deployment/delay-action-for-chaos-mesh-31ed2484-4aeb-4dcc-aa98-b61933d371cc.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4035,7 +4035,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hierarchical-parent-inventory-relationship-3255f170-e2b1-48e8-bbed-40d4e0198a90.html">
+<a href="/meshery.io/catalog/deployment/hierarchical-parent-inventory-relationship-3255f170-e2b1-48e8-bbed-40d4e0198a90.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4078,7 +4078,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/jaeger-operator-32f10b2a-82eb-4ab9-b1f7-4f8c7f888011.html">
+<a href="/meshery.io/catalog/deployment/jaeger-operator-32f10b2a-82eb-4ab9-b1f7-4f8c7f888011.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4121,7 +4121,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/rabbitmq-cluster-operator-33307744-8085-4f09-9dda-28666c6bb8c1.html">
+<a href="/meshery.io/catalog/deployment/rabbitmq-cluster-operator-33307744-8085-4f09-9dda-28666c6bb8c1.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4164,7 +4164,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kubernetes-service-design-336465da-5ead-418c-baee-a369fb5581e9.html">
+<a href="/meshery.io/catalog/deployment/kubernetes-service-design-336465da-5ead-418c-baee-a369fb5581e9.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4207,7 +4207,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-payments-rest-3375dd93-d96f-43da-9a70-efff84b412e9.html">
+<a href="/meshery.io/catalog/deployment/ms-payments-rest-3375dd93-d96f-43da-9a70-efff84b412e9.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4250,7 +4250,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/sqlcl-liquibase-1-0-0-tgz-34cc15a9-2cf7-4eb6-91b6-c9731e0984d8.html">
+<a href="/meshery.io/catalog/deployment/sqlcl-liquibase-1-0-0-tgz-34cc15a9-2cf7-4eb6-91b6-c9731e0984d8.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4293,7 +4293,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/meshery-design-fixture-json-34fe3846-4b90-4558-914c-8e57caefd52f.html">
+<a href="/meshery.io/catalog/deployment/meshery-design-fixture-json-34fe3846-4b90-4558-914c-8e57caefd52f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4336,7 +4336,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/wordpress-and-mysql-on-kubernetes-3546d0d4-ba6e-4c7e-9661-853ade11847f.html">
+<a href="/meshery.io/catalog/deployment/wordpress-and-mysql-on-kubernetes-3546d0d4-ba6e-4c7e-9661-853ade11847f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4379,7 +4379,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/cluster-istio-18-11-60-tgz-35e082b6-7c4f-40f1-a7b8-000b6c65dfaf.html">
+<a href="/meshery.io/catalog/deployment/cluster-istio-18-11-60-tgz-35e082b6-7c4f-40f1-a7b8-000b6c65dfaf.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4422,7 +4422,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/autoscaling-based-on-metrics-in-gke-35ecff6c-41f5-400b-92c4-f959dd23ee15.html">
+<a href="/meshery.io/catalog/deployment/autoscaling-based-on-metrics-in-gke-35ecff6c-41f5-400b-92c4-f959dd23ee15.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4465,7 +4465,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/edge-mount-relationship-37422db6-b585-4b1a-baaa-d307d33d5ebf.html">
+<a href="/meshery.io/catalog/deployment/edge-mount-relationship-37422db6-b585-4b1a-baaa-d307d33d5ebf.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4508,7 +4508,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/aws-cloudfront-controller-37792455-294f-481b-a7a8-13e79ca835ca.html">
+<a href="/meshery.io/catalog/deployment/aws-cloudfront-controller-37792455-294f-481b-a7a8-13e79ca835ca.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4551,7 +4551,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/keda-setup-378da4da-dc81-4b6f-9473-fc91b5ce88e1.html">
+<a href="/meshery.io/catalog/deployment/keda-setup-378da4da-dc81-4b6f-9473-fc91b5ce88e1.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4594,7 +4594,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/edge-mount-relationship-3793337c-8c85-4112-848d-d659a4d34b22.html">
+<a href="/meshery.io/catalog/deployment/edge-mount-relationship-3793337c-8c85-4112-848d-d659a4d34b22.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4637,7 +4637,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-base-0-0-22-tgz-381b381a-b7d3-4534-8075-0b1a8105ea10.html">
+<a href="/meshery.io/catalog/deployment/ms-base-0-0-22-tgz-381b381a-b7d3-4534-8075-0b1a8105ea10.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4680,7 +4680,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/grafana-deployment-3a38cc90-e998-4f2a-9747-17f2d7ddf313.html">
+<a href="/meshery.io/catalog/deployment/grafana-deployment-3a38cc90-e998-4f2a-9747-17f2d7ddf313.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4723,7 +4723,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/deploy-meshery-using-meshery-3afb9cdf-4a37-4db2-a9f9-2e2b8769ec3e.html">
+<a href="/meshery.io/catalog/deployment/deploy-meshery-using-meshery-3afb9cdf-4a37-4db2-a9f9-2e2b8769ec3e.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4766,7 +4766,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/meshery-cilium-deployment-3b2a210d-77b4-4267-bc8e-bc32758edf76.html">
+<a href="/meshery.io/catalog/deployment/meshery-cilium-deployment-3b2a210d-77b4-4267-bc8e-bc32758edf76.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4809,7 +4809,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/prometheus-kubernetes-3c3439a0-d215-4a71-aa47-13a5f2d007b7.html">
+<a href="/meshery.io/catalog/deployment/prometheus-kubernetes-3c3439a0-d215-4a71-aa47-13a5f2d007b7.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4852,7 +4852,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/exam-portal-with-real-time-leaderboard-aws-3cf2d3a4-460f-44a0-8efc-bfc5b5ae661c.html">
+<a href="/meshery.io/catalog/deployment/exam-portal-with-real-time-leaderboard-aws-3cf2d3a4-460f-44a0-8efc-bfc5b5ae661c.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4895,7 +4895,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/cryptomb-tls-handshake-acceleration-for-istio-3d01bc39-8627-42b7-abe1-0cf9eb3a0a9d.html">
+<a href="/meshery.io/catalog/deployment/cryptomb-tls-handshake-acceleration-for-istio-3d01bc39-8627-42b7-abe1-0cf9eb3a0a9d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4938,7 +4938,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kibana-helm-design-fixed-3e027027-05dc-4c10-9bd0-287cb34c2b09.html">
+<a href="/meshery.io/catalog/deployment/kibana-helm-design-fixed-3e027027-05dc-4c10-9bd0-287cb34c2b09.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -4981,7 +4981,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/guest-book-3e3c169a-c252-4b71-8667-62dd6ed085be.html">
+<a href="/meshery.io/catalog/deployment/guest-book-3e3c169a-c252-4b71-8667-62dd6ed085be.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5024,7 +5024,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/online-polling-application-3e85b81b-f366-4afc-a24f-763a4cf66a8b.html">
+<a href="/meshery.io/catalog/deployment/online-polling-application-3e85b81b-f366-4afc-a24f-763a4cf66a8b.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5067,7 +5067,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/busybox-single-fresh-3ec30961-1aba-4db7-86c5-7556de5d90ca.html">
+<a href="/meshery.io/catalog/deployment/busybox-single-fresh-3ec30961-1aba-4db7-86c5-7556de5d90ca.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5110,7 +5110,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hierarchical-parent-matchlabels-relationship-3ec9ec04-1a16-4814-ba1d-12c61b356bc3.html">
+<a href="/meshery.io/catalog/deployment/hierarchical-parent-matchlabels-relationship-3ec9ec04-1a16-4814-ba1d-12c61b356bc3.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5153,7 +5153,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/vault-operator-3f3e545b-063b-4c0a-9cb5-0928d7bd9462.html">
+<a href="/meshery.io/catalog/deployment/vault-operator-3f3e545b-063b-4c0a-9cb5-0928d7bd9462.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5196,7 +5196,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/managing-configuration-for-kubernetes-pods-3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a.html">
+<a href="/meshery.io/catalog/deployment/managing-configuration-for-kubernetes-pods-3f712cfe-b2a9-4b4f-89df-ac5b19d10f3a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5239,7 +5239,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/sample-template-relationship-diagram-3fd06d85-e516-4eae-b7b6-474231b6d48d.html">
+<a href="/meshery.io/catalog/deployment/sample-template-relationship-diagram-3fd06d85-e516-4eae-b7b6-474231b6d48d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5282,7 +5282,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/serve-an-llm-using-multi-host-tpus-on-gke-3fe52f86-0214-4813-9d23-727f2e57469b.html">
+<a href="/meshery.io/catalog/deployment/serve-an-llm-using-multi-host-tpus-on-gke-3fe52f86-0214-4813-9d23-727f2e57469b.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5325,7 +5325,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/mount-pod-persistentvolume-4032a5c3-d081-429b-9087-2b9bdaa7396b.html">
+<a href="/meshery.io/catalog/deployment/mount-pod-persistentvolume-4032a5c3-d081-429b-9087-2b9bdaa7396b.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5368,7 +5368,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/distributed-web-crawler-4085f7a4-34e4-45a5-b00b-7fb1c19543a7.html">
+<a href="/meshery.io/catalog/deployment/distributed-web-crawler-4085f7a4-34e4-45a5-b00b-7fb1c19543a7.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5411,7 +5411,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/tagset-relationships-40e5c357-472a-43cd-be4a-8af002974ed5.html">
+<a href="/meshery.io/catalog/deployment/tagset-relationships-40e5c357-472a-43cd-be4a-8af002974ed5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5454,7 +5454,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/cert-manager-v1-18-2-tgz-41c80476-8147-4e7e-adaa-1da35c1103a4.html">
+<a href="/meshery.io/catalog/deployment/cert-manager-v1-18-2-tgz-41c80476-8147-4e7e-adaa-1da35c1103a4.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5497,7 +5497,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/azure-service-operator-4213db96-87ad-4829-9553-d3c6fdaa9206.html">
+<a href="/meshery.io/catalog/deployment/azure-service-operator-4213db96-87ad-4829-9553-d3c6fdaa9206.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5540,7 +5540,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-microsoftgraph-worker-0-0-11-tgz-42ae63d9-06d1-4957-bf91-7be82ce80742.html">
+<a href="/meshery.io/catalog/deployment/ms-microsoftgraph-worker-0-0-11-tgz-42ae63d9-06d1-4957-bf91-7be82ce80742.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5583,7 +5583,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/istio-control-plane-454dff6a-d988-4a09-8206-963eaa816c8d.html">
+<a href="/meshery.io/catalog/deployment/istio-control-plane-454dff6a-d988-4a09-8206-963eaa816c8d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5626,7 +5626,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/thanos-query-design-464b4f2a-78d8-4034-915a-612475f757d2.html">
+<a href="/meshery.io/catalog/deployment/thanos-query-design-464b4f2a-78d8-4034-915a-612475f757d2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5669,7 +5669,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/argo-cd-w-dex-4690406b-60e7-4c82-87c3-20b22862f5b5.html">
+<a href="/meshery.io/catalog/deployment/argo-cd-w-dex-4690406b-60e7-4c82-87c3-20b22862f5b5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5712,7 +5712,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kafka-32-3-10-tgz-470c84f8-32ba-4741-8a78-64e64774a7b4.html">
+<a href="/meshery.io/catalog/deployment/kafka-32-3-10-tgz-470c84f8-32ba-4741-8a78-64e64774a7b4.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5755,7 +5755,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/all-relationships-479108bc-c07d-4a25-aa02-40d63451f10b.html">
+<a href="/meshery.io/catalog/deployment/all-relationships-479108bc-c07d-4a25-aa02-40d63451f10b.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5798,7 +5798,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/chaos-mesh-architecture-copy-48db8990-978a-4845-9e82-de1eae091498.html">
+<a href="/meshery.io/catalog/deployment/chaos-mesh-architecture-copy-48db8990-978a-4845-9e82-de1eae091498.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5841,7 +5841,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kiali-architecture-design-496ac5d6-cf5c-4943-b0ca-2e3e346ad202.html">
+<a href="/meshery.io/catalog/deployment/kiali-architecture-design-496ac5d6-cf5c-4943-b0ca-2e3e346ad202.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5884,7 +5884,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hierarchiacal-parent-inventory-relationship-4a871757-054c-48cf-bc30-32814b7271a5.html">
+<a href="/meshery.io/catalog/deployment/hierarchiacal-parent-inventory-relationship-4a871757-054c-48cf-bc30-32814b7271a5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5927,7 +5927,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/jenkins-13-6-17-tgz-4c918765-c145-4607-a0ad-af01a7fa696e.html">
+<a href="/meshery.io/catalog/deployment/jenkins-13-6-17-tgz-4c918765-c145-4607-a0ad-af01a7fa696e.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -5970,7 +5970,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hello-design-yml-4d3d5921-2293-4b12-b3b5-aa147fbbf755.html">
+<a href="/meshery.io/catalog/deployment/hello-design-yml-4d3d5921-2293-4b12-b3b5-aa147fbbf755.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6013,7 +6013,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/argocd-application-controller-4efe3cb7-c901-48a9-9324-67d73d546aff.html">
+<a href="/meshery.io/catalog/deployment/argocd-application-controller-4efe3cb7-c901-48a9-9324-67d73d546aff.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6056,7 +6056,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/elasticsearch-with-kubernetes-4fa79264-3c97-497d-aaf1-f79f52c7decf.html">
+<a href="/meshery.io/catalog/deployment/elasticsearch-with-kubernetes-4fa79264-3c97-497d-aaf1-f79f52c7decf.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6099,7 +6099,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/loxilb-0-1-0-tgz-4fb7a134-d048-4db4-a556-c1e2c834c995.html">
+<a href="/meshery.io/catalog/deployment/loxilb-0-1-0-tgz-4fb7a134-d048-4db4-a556-c1e2c834c995.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6142,7 +6142,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/prometheus-dummy-exporter-4fe5b8f3-d8c7-487c-9860-bc7cb8674d48.html">
+<a href="/meshery.io/catalog/deployment/prometheus-dummy-exporter-4fe5b8f3-d8c7-487c-9860-bc7cb8674d48.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6185,7 +6185,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/spring-cloud-microservices-architecture-4fed25f3-e63e-48b2-bff8-b05da462af14.html">
+<a href="/meshery.io/catalog/deployment/spring-cloud-microservices-architecture-4fed25f3-e63e-48b2-bff8-b05da462af14.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6228,7 +6228,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/mattermost-server-scaling-for-aws-design-50579aa0-0ada-4400-b954-02d237a107c2.html">
+<a href="/meshery.io/catalog/deployment/mattermost-server-scaling-for-aws-design-50579aa0-0ada-4400-b954-02d237a107c2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6271,7 +6271,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/tutorial-comments-508efffb-d106-4593-af7b-0b85e1a59822.html">
+<a href="/meshery.io/catalog/deployment/tutorial-comments-508efffb-d106-4593-af7b-0b85e1a59822.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6314,7 +6314,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/guestbook-application-extended-version-517a238d-da27-47d3-94e0-1b75fd0b3052.html">
+<a href="/meshery.io/catalog/deployment/guestbook-application-extended-version-517a238d-da27-47d3-94e0-1b75fd0b3052.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6357,7 +6357,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/edge-firewall-relationship-51e49367-2f57-4055-b2df-dc0f35d4d7c8.html">
+<a href="/meshery.io/catalog/deployment/edge-firewall-relationship-51e49367-2f57-4055-b2df-dc0f35d4d7c8.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6400,7 +6400,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/appsmith-7-0-3-tgz-5275aa84-91e0-4df1-883d-8df61397f951.html">
+<a href="/meshery.io/catalog/deployment/appsmith-7-0-3-tgz-5275aa84-91e0-4df1-883d-8df61397f951.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6443,7 +6443,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/prometheus-sample-5479aed9-669a-4bea-9693-56921b55d04d.html">
+<a href="/meshery.io/catalog/deployment/prometheus-sample-5479aed9-669a-4bea-9693-56921b55d04d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6486,7 +6486,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/browerless-chrome-571a79c9-01c5-4c4b-b8c6-c3f0b2f2415f.html">
+<a href="/meshery.io/catalog/deployment/browerless-chrome-571a79c9-01c5-4c4b-b8c6-c3f0b2f2415f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6529,7 +6529,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/mattermost-cluster-install-5751de17-4f97-41c2-a3de-bfc156d456c5.html">
+<a href="/meshery.io/catalog/deployment/mattermost-cluster-install-5751de17-4f97-41c2-a3de-bfc156d456c5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6572,7 +6572,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pod-volumes-projected-57b9de8d-2ab3-4d18-9314-11125e63e551.html">
+<a href="/meshery.io/catalog/deployment/pod-volumes-projected-57b9de8d-2ab3-4d18-9314-11125e63e551.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6615,7 +6615,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/understanding-the-difference-between-edge-relationships-57f4628b-798e-4f72-be0e-03b42683b27b.html">
+<a href="/meshery.io/catalog/deployment/understanding-the-difference-between-edge-relationships-57f4628b-798e-4f72-be0e-03b42683b27b.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6658,7 +6658,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/acme-operator-57fd2528-fa40-4627-9a4a-67144982b9c3.html">
+<a href="/meshery.io/catalog/deployment/acme-operator-57fd2528-fa40-4627-9a4a-67144982b9c3.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6701,7 +6701,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-filestorage-rest-580d0f01-839b-4b44-90c3-a05656bfc2ab.html">
+<a href="/meshery.io/catalog/deployment/ms-filestorage-rest-580d0f01-839b-4b44-90c3-a05656bfc2ab.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6744,7 +6744,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/service-internal-traffic-policy-58fc14c4-1ba6-41b6-8dd0-ed1dabd87215.html">
+<a href="/meshery.io/catalog/deployment/service-internal-traffic-policy-58fc14c4-1ba6-41b6-8dd0-ed1dabd87215.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6787,7 +6787,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/example-edge-firewall-relationship-58fda714-eaa4-490f-b228-b8bcfe3a1e47.html">
+<a href="/meshery.io/catalog/deployment/example-edge-firewall-relationship-58fda714-eaa4-490f-b228-b8bcfe3a1e47.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6830,7 +6830,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/prometheus-yaml-59e0f642-3249-46c3-9436-9e873b8eef56.html">
+<a href="/meshery.io/catalog/deployment/prometheus-yaml-59e0f642-3249-46c3-9436-9e873b8eef56.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6873,7 +6873,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-rbac-grpc-5ace2887-9622-41da-bc55-55ce674ead02.html">
+<a href="/meshery.io/catalog/deployment/ms-rbac-grpc-5ace2887-9622-41da-bc55-55ce674ead02.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6916,7 +6916,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/simple-kubernetes-pod-5b19bed7-f6d2-4637-8506-9020fbd68740.html">
+<a href="/meshery.io/catalog/deployment/simple-kubernetes-pod-5b19bed7-f6d2-4637-8506-9020fbd68740.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -6959,7 +6959,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/prometheus-opencost-exporter-5b755f6d-92fa-4616-aeb8-7c932baf3bc0.html">
+<a href="/meshery.io/catalog/deployment/prometheus-opencost-exporter-5b755f6d-92fa-4616-aeb8-7c932baf3bc0.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7002,7 +7002,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hierarchical-parent-wallet-relationship-5d1f5f57-355e-49a4-b181-ead453d86cae.html">
+<a href="/meshery.io/catalog/deployment/hierarchical-parent-wallet-relationship-5d1f5f57-355e-49a4-b181-ead453d86cae.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7045,7 +7045,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-payments-worker-0-0-11-tgz-5d71d1b6-868e-456f-afb0-95f12410dbf9.html">
+<a href="/meshery.io/catalog/deployment/ms-payments-worker-0-0-11-tgz-5d71d1b6-868e-456f-afb0-95f12410dbf9.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7088,7 +7088,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/meshery-v0-6-73-5eeaef1f-9c17-4b52-b0bb-3e488ad15a2c.html">
+<a href="/meshery.io/catalog/deployment/meshery-v0-6-73-5eeaef1f-9c17-4b52-b0bb-3e488ad15a2c.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7131,7 +7131,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/gerrit-operator-5fdb64c5-80ca-4f6c-ba6e-1a1f98b553a9.html">
+<a href="/meshery.io/catalog/deployment/gerrit-operator-5fdb64c5-80ca-4f6c-ba6e-1a1f98b553a9.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7174,7 +7174,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/nginx-controller-6032511d-bb55-4bcf-bccd-582cd9e61ec0.html">
+<a href="/meshery.io/catalog/deployment/nginx-controller-6032511d-bb55-4bcf-bccd-582cd9e61ec0.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7217,7 +7217,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/elk-stack-6036b918-a3c7-4b16-9da1-8727909ab2be.html">
+<a href="/meshery.io/catalog/deployment/elk-stack-6036b918-a3c7-4b16-9da1-8727909ab2be.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7260,7 +7260,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/terraform-architecture-60467829-05b2-4ccd-97b9-bb57221d42bc.html">
+<a href="/meshery.io/catalog/deployment/terraform-architecture-60467829-05b2-4ccd-97b9-bb57221d42bc.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7303,7 +7303,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/managing-configuration-for-kubernetes-pods-6046f07a-e9b5-4ffd-ad5d-d8d5f55a2203.html">
+<a href="/meshery.io/catalog/deployment/managing-configuration-for-kubernetes-pods-6046f07a-e9b5-4ffd-ad5d-d8d5f55a2203.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7346,7 +7346,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/tutorial-canary-deployment-with-meshery-616567e0-937b-46a3-8748-cdaa69f4be7f.html">
+<a href="/meshery.io/catalog/deployment/tutorial-canary-deployment-with-meshery-616567e0-937b-46a3-8748-cdaa69f4be7f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7389,7 +7389,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pod-volume-mount-subpath-623a0154-3c09-4e52-9c87-fa8abeda2fe7.html">
+<a href="/meshery.io/catalog/deployment/pod-volume-mount-subpath-623a0154-3c09-4e52-9c87-fa8abeda2fe7.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7432,7 +7432,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/keda-httprequestsscaler-62e3f0ef-503e-4637-85d3-288584db81a5.html">
+<a href="/meshery.io/catalog/deployment/keda-httprequestsscaler-62e3f0ef-503e-4637-85d3-288584db81a5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7475,7 +7475,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hierarchical-parent-relationship-6370ffcd-13a6-4a65-b426-30f1e63dc381.html">
+<a href="/meshery.io/catalog/deployment/hierarchical-parent-relationship-6370ffcd-13a6-4a65-b426-30f1e63dc381.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7518,7 +7518,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/node-problem-detector-6482df99-27aa-4a51-9aab-92d2a2a9d0ca.html">
+<a href="/meshery.io/catalog/deployment/node-problem-detector-6482df99-27aa-4a51-9aab-92d2a2a9d0ca.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7561,7 +7561,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/azure-monitor-containers-661bf5e6-cf42-4804-8a74-f7fe651b8bb4.html">
+<a href="/meshery.io/catalog/deployment/azure-monitor-containers-661bf5e6-cf42-4804-8a74-f7fe651b8bb4.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7604,7 +7604,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/qat-tls-handshake-acceleration-for-istio-yaml-66d4e848-fe7e-4baf-b8db-9ff54d0113d6.html">
+<a href="/meshery.io/catalog/deployment/qat-tls-handshake-acceleration-for-istio-yaml-66d4e848-fe7e-4baf-b8db-9ff54d0113d6.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7647,7 +7647,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/webserver-66f483b2-5ca5-457a-b149-46a661468c34.html">
+<a href="/meshery.io/catalog/deployment/webserver-66f483b2-5ca5-457a-b149-46a661468c34.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7690,7 +7690,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/simple-mysql-pod-68a67a3a-eb39-472e-8d9c-a3b34fa23a71.html">
+<a href="/meshery.io/catalog/deployment/simple-mysql-pod-68a67a3a-eb39-472e-8d9c-a3b34fa23a71.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7733,7 +7733,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/the-new-stack-69844b4a-d60d-4705-b255-edf2dbde0f5a.html">
+<a href="/meshery.io/catalog/deployment/the-new-stack-69844b4a-d60d-4705-b255-edf2dbde0f5a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7776,7 +7776,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/first-contribution-69afa37b-0ac4-4be5-a55e-ac4247dd3c1b.html">
+<a href="/meshery.io/catalog/deployment/first-contribution-69afa37b-0ac4-4be5-a55e-ac4247dd3c1b.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7819,7 +7819,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/edge-annotation-relationship-69c0efd0-08bd-48f2-8b20-c172f3489ee2.html">
+<a href="/meshery.io/catalog/deployment/edge-annotation-relationship-69c0efd0-08bd-48f2-8b20-c172f3489ee2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7862,7 +7862,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/azure-istio-cicd-mesh-architecture-copy-69e3ebda-e5d7-436b-82ec-c0295a08122c.html">
+<a href="/meshery.io/catalog/deployment/azure-istio-cicd-mesh-architecture-copy-69e3ebda-e5d7-436b-82ec-c0295a08122c.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7905,7 +7905,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/design-annotation-patterns-69fdde5f-c7fb-404f-b785-154586b354ae.html">
+<a href="/meshery.io/catalog/deployment/design-annotation-patterns-69fdde5f-c7fb-404f-b785-154586b354ae.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7948,7 +7948,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/my-first-k8s-app-6a0492fd-73b2-496d-9c5f-278c00d3a5ca.html">
+<a href="/meshery.io/catalog/deployment/my-first-k8s-app-6a0492fd-73b2-496d-9c5f-278c00d3a5ca.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -7991,7 +7991,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/k8-s-cluster-overprovisioner-6b6e5bbd-1c8b-4aab-87be-b7b397f2aeed.html">
+<a href="/meshery.io/catalog/deployment/k8-s-cluster-overprovisioner-6b6e5bbd-1c8b-4aab-87be-b7b397f2aeed.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8034,7 +8034,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ditto-operator-0-3-0-tgz-6c6a05dd-dd82-41fc-a749-716408990eda.html">
+<a href="/meshery.io/catalog/deployment/ditto-operator-0-3-0-tgz-6c6a05dd-dd82-41fc-a749-716408990eda.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8077,7 +8077,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/redis-using-configmap-6d4bb838-2a05-447e-bba4-b59104ace089.html">
+<a href="/meshery.io/catalog/deployment/redis-using-configmap-6d4bb838-2a05-447e-bba4-b59104ace089.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8120,7 +8120,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/wordpress-deployment-6da8edb1-cba2-4c81-b9d6-00dfb0386ad1.html">
+<a href="/meshery.io/catalog/deployment/wordpress-deployment-6da8edb1-cba2-4c81-b9d6-00dfb0386ad1.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8163,7 +8163,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/k8s-webapp-deployment-service-6ddc8245-74a0-4343-8619-0a9755b04fc2.html">
+<a href="/meshery.io/catalog/deployment/k8s-webapp-deployment-service-6ddc8245-74a0-4343-8619-0a9755b04fc2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8206,7 +8206,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kubeflow-ecosystem-architecture-yaml-6e232806-21da-4ec5-9962-d23ea011b0bf.html">
+<a href="/meshery.io/catalog/deployment/kubeflow-ecosystem-architecture-yaml-6e232806-21da-4ec5-9962-d23ea011b0bf.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8249,7 +8249,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/untitled-design-6f3f0b77-3f4a-4639-b513-e7d6a0c57550.html">
+<a href="/meshery.io/catalog/deployment/untitled-design-6f3f0b77-3f4a-4639-b513-e7d6a0c57550.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8292,7 +8292,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/cloud-native-pizza-store-6f8474c8-d81b-43eb-83a0-52f71af4ce7b.html">
+<a href="/meshery.io/catalog/deployment/cloud-native-pizza-store-6f8474c8-d81b-43eb-83a0-52f71af4ce7b.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8335,7 +8335,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kubernetes-daemonset-pattern-7191dfdd-2c44-4235-acb7-688f5e99750d.html">
+<a href="/meshery.io/catalog/deployment/kubernetes-daemonset-pattern-7191dfdd-2c44-4235-acb7-688f5e99750d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8378,7 +8378,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/design-reviews-71a28a89-6bf6-45c1-b6ad-d0dfb271d52f.html">
+<a href="/meshery.io/catalog/deployment/design-reviews-71a28a89-6bf6-45c1-b6ad-d0dfb271d52f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8421,7 +8421,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/node-feature-discovery-736a8f97-c3f8-4481-888a-1eff27414caa.html">
+<a href="/meshery.io/catalog/deployment/node-feature-discovery-736a8f97-c3f8-4481-888a-1eff27414caa.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8464,7 +8464,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/treafik-enterprise-architecture-yaml-7464feb1-450a-47d8-b03c-4318a4b62589.html">
+<a href="/meshery.io/catalog/deployment/treafik-enterprise-architecture-yaml-7464feb1-450a-47d8-b03c-4318a4b62589.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8507,7 +8507,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-payments-grpc-0-0-11-74b17e3a-3fc8-411c-8086-e4c13138bb65.html">
+<a href="/meshery.io/catalog/deployment/ms-payments-grpc-0-0-11-74b17e3a-3fc8-411c-8086-e4c13138bb65.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8550,7 +8550,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pod-resource-limit-755b64db-59c5-41a3-896b-788aa579de41.html">
+<a href="/meshery.io/catalog/deployment/pod-resource-limit-755b64db-59c5-41a3-896b-788aa579de41.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8593,7 +8593,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/adobe-flex-in-a-box-architecture-7656ade4-9934-4b51-b182-2e04ca70522e.html">
+<a href="/meshery.io/catalog/deployment/adobe-flex-in-a-box-architecture-7656ade4-9934-4b51-b182-2e04ca70522e.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8636,7 +8636,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/elasticsearch-792f17b4-08f5-4654-8c10-3628fd56ac03.html">
+<a href="/meshery.io/catalog/deployment/elasticsearch-792f17b4-08f5-4654-8c10-3628fd56ac03.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8679,7 +8679,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/simple-kubernetes-pod-79fb7ba9-583d-4e04-af43-5fed438cd416.html">
+<a href="/meshery.io/catalog/deployment/simple-kubernetes-pod-79fb7ba9-583d-4e04-af43-5fed438cd416.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8722,7 +8722,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/mattermost-operator-1-0-4-tgz-7a16f09c-c8d6-4ca5-aebf-f45f805afb30.html">
+<a href="/meshery.io/catalog/deployment/mattermost-operator-1-0-4-tgz-7a16f09c-c8d6-4ca5-aebf-f45f805afb30.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8765,7 +8765,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/prometheus-and-grafana-monitoring-stack-7a65270b-b5f1-4229-8abc-def9856cd06a.html">
+<a href="/meshery.io/catalog/deployment/prometheus-and-grafana-monitoring-stack-7a65270b-b5f1-4229-8abc-def9856cd06a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8808,7 +8808,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/prometheus-adapter-7ab91040-5402-406f-8211-37c3ab9eb2bb.html">
+<a href="/meshery.io/catalog/deployment/prometheus-adapter-7ab91040-5402-406f-8211-37c3ab9eb2bb.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8851,7 +8851,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/edge-network-relationship-7b1a4654-0215-4407-8057-f7669965960c.html">
+<a href="/meshery.io/catalog/deployment/edge-network-relationship-7b1a4654-0215-4407-8057-f7669965960c.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8894,7 +8894,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/network-policy-7b2e40b0-3cc8-4da3-bccd-b66bc6cd206a.html">
+<a href="/meshery.io/catalog/deployment/network-policy-7b2e40b0-3cc8-4da3-bccd-b66bc6cd206a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8937,7 +8937,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/all-relationships-7b717cb2-24a1-4f4a-976e-ef1c9a982696.html">
+<a href="/meshery.io/catalog/deployment/all-relationships-7b717cb2-24a1-4f4a-976e-ef1c9a982696.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -8980,7 +8980,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/nginx-ingress-7be5170d-d13e-4d83-bc1e-f1acc91b4048.html">
+<a href="/meshery.io/catalog/deployment/nginx-ingress-7be5170d-d13e-4d83-bc1e-f1acc91b4048.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9023,7 +9023,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-emails-rest-7d75f2d5-ca18-485d-b762-8429d46310a0.html">
+<a href="/meshery.io/catalog/deployment/ms-emails-rest-7d75f2d5-ca18-485d-b762-8429d46310a0.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9066,7 +9066,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/example-edge-permission-relationship-7dd39d30-7b14-4f9f-a66c-06ba3e5000fa.html">
+<a href="/meshery.io/catalog/deployment/example-edge-permission-relationship-7dd39d30-7b14-4f9f-a66c-06ba3e5000fa.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9109,7 +9109,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/untitled-design-7e3b5894-0e9f-470a-82fa-0b5d8a3a057c.html">
+<a href="/meshery.io/catalog/deployment/untitled-design-7e3b5894-0e9f-470a-82fa-0b5d8a3a057c.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9152,7 +9152,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pod-node-affinity-7fae3c13-8807-4134-a35b-3c531fa21e4e.html">
+<a href="/meshery.io/catalog/deployment/pod-node-affinity-7fae3c13-8807-4134-a35b-3c531fa21e4e.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9195,7 +9195,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/mern-80181f03-ff56-4c63-bfb1-0686fc50fee5.html">
+<a href="/meshery.io/catalog/deployment/mern-80181f03-ff56-4c63-bfb1-0686fc50fee5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9238,7 +9238,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/vald-helm-v1-7-17-tgz-812a64a6-800a-4d86-b2fd-ef1bc22f7bed.html">
+<a href="/meshery.io/catalog/deployment/vald-helm-v1-7-17-tgz-812a64a6-800a-4d86-b2fd-ef1bc22f7bed.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9281,7 +9281,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/deployment-configmap-reference-relationship-83191f0e-001a-430e-8620-158a05323ac5.html">
+<a href="/meshery.io/catalog/deployment/deployment-configmap-reference-relationship-83191f0e-001a-430e-8620-158a05323ac5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9324,7 +9324,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/myfirstmesherydesign-84b3e150-36a0-439f-a1f4-03d1aa240a45.html">
+<a href="/meshery.io/catalog/deployment/myfirstmesherydesign-84b3e150-36a0-439f-a1f4-03d1aa240a45.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9367,7 +9367,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/redis-master-deployment-855884db-267b-4357-8e8e-cf189ec971a5.html">
+<a href="/meshery.io/catalog/deployment/redis-master-deployment-855884db-267b-4357-8e8e-cf189ec971a5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9410,7 +9410,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/format-template-856f2e02-5367-4dc4-981c-576d0c1c1ecb.html">
+<a href="/meshery.io/catalog/deployment/format-template-856f2e02-5367-4dc4-981c-576d0c1c1ecb.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9453,7 +9453,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/analytics-dashboard-backend-858ebe68-4a49-4020-98c7-414ba7d2d198.html">
+<a href="/meshery.io/catalog/deployment/analytics-dashboard-backend-858ebe68-4a49-4020-98c7-414ba7d2d198.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9496,7 +9496,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/mysql-deployment-85d5a84d-85e1-492d-98c7-6a365c00cc1b.html">
+<a href="/meshery.io/catalog/deployment/mysql-deployment-85d5a84d-85e1-492d-98c7-6a365c00cc1b.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9539,7 +9539,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pod-volume-mount-subpath-expr-8652b112-80d7-4fde-bc87-9d2dbd4327cc.html">
+<a href="/meshery.io/catalog/deployment/pod-volume-mount-subpath-expr-8652b112-80d7-4fde-bc87-9d2dbd4327cc.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9582,7 +9582,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pod-life-cycle-86545f65-1034-437a-ac9b-ed85fe4dcdc8.html">
+<a href="/meshery.io/catalog/deployment/pod-life-cycle-86545f65-1034-437a-ac9b-ed85fe4dcdc8.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9625,7 +9625,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/nginx-pod-with-meshery-milestone-app-8738285d-de4d-421a-aab7-e8760ba57537.html">
+<a href="/meshery.io/catalog/deployment/nginx-pod-with-meshery-milestone-app-8738285d-de4d-421a-aab7-e8760ba57537.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9668,7 +9668,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/eventdrivenmicroserviceskafka-877ec148-d9dd-4536-bfab-4dcab83ffec1.html">
+<a href="/meshery.io/catalog/deployment/eventdrivenmicroserviceskafka-877ec148-d9dd-4536-bfab-4dcab83ffec1.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9711,7 +9711,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/edge-permission-relationship-88313950-0d4a-4f03-acc8-debfd3cf34b4.html">
+<a href="/meshery.io/catalog/deployment/edge-permission-relationship-88313950-0d4a-4f03-acc8-debfd3cf34b4.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9754,7 +9754,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/azure-monitor-containers-88794a57-f0f7-4ff6-9192-54ab7241ded8.html">
+<a href="/meshery.io/catalog/deployment/azure-monitor-containers-88794a57-f0f7-4ff6-9192-54ab7241ded8.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9797,7 +9797,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/edge-network-relationship-service-to-deployment-88cdf94a-ffa9-4acf-9b24-bf0b6c024d89.html">
+<a href="/meshery.io/catalog/deployment/edge-network-relationship-service-to-deployment-88cdf94a-ffa9-4acf-9b24-bf0b6c024d89.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9840,7 +9840,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/bitbucket-publishing-test-8aff6564-9e88-40f3-ae6f-75d92654d7b0.html">
+<a href="/meshery.io/catalog/deployment/bitbucket-publishing-test-8aff6564-9e88-40f3-ae6f-75d92654d7b0.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9883,7 +9883,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/jax-hello-world-using-nvidia-gpus-a100-80gb-on-gke-8b041687-3c09-4cfd-8613-cf326a54e1b2.html">
+<a href="/meshery.io/catalog/deployment/jax-hello-world-using-nvidia-gpus-a100-80gb-on-gke-8b041687-3c09-4cfd-8613-cf326a54e1b2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9926,7 +9926,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hello-nginx-design-yml-8b3a14d0-b822-4c0d-8051-571032558408.html">
+<a href="/meshery.io/catalog/deployment/hello-nginx-design-yml-8b3a14d0-b822-4c0d-8051-571032558408.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -9969,7 +9969,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/fluentbit-log-pipeline-8b646678-95c0-42ec-b5c5-42f7b88a7791.html">
+<a href="/meshery.io/catalog/deployment/fluentbit-log-pipeline-8b646678-95c0-42ec-b5c5-42f7b88a7791.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10012,7 +10012,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/load-balanced-aws-architecture-8ba4a8da-9455-4079-a771-388eb5a14a21.html">
+<a href="/meshery.io/catalog/deployment/load-balanced-aws-architecture-8ba4a8da-9455-4079-a771-388eb5a14a21.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10055,7 +10055,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pod-priviledged-simple-8ba59757-4ae6-4568-be5c-32e32fe51031.html">
+<a href="/meshery.io/catalog/deployment/pod-priviledged-simple-8ba59757-4ae6-4568-be5c-32e32fe51031.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10098,7 +10098,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/marblerun-8ce06bfa-a917-44e5-b670-15c74ec177c0.html">
+<a href="/meshery.io/catalog/deployment/marblerun-8ce06bfa-a917-44e5-b670-15c74ec177c0.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10141,7 +10141,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/aspnet-core-6-0-0-tgz-8cff4bae-818f-4c9b-8511-a6feaabf6b1e.html">
+<a href="/meshery.io/catalog/deployment/aspnet-core-6-0-0-tgz-8cff4bae-818f-4c9b-8511-a6feaabf6b1e.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10184,7 +10184,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/understanding-persistent-storage-in-kubernetes-8d6526e4-3c85-44c4-bf2b-b45592fd880d.html">
+<a href="/meshery.io/catalog/deployment/understanding-persistent-storage-in-kubernetes-8d6526e4-3c85-44c4-bf2b-b45592fd880d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10227,7 +10227,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ec2-controller-design-8f7e1431-3885-4ebf-9ef7-d2ec64bd4eb5.html">
+<a href="/meshery.io/catalog/deployment/ec2-controller-design-8f7e1431-3885-4ebf-9ef7-d2ec64bd4eb5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10270,7 +10270,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/edge-permission-relationship-90ae7d59-1eba-4ce5-b029-d14f79f1895f.html">
+<a href="/meshery.io/catalog/deployment/edge-permission-relationship-90ae7d59-1eba-4ce5-b029-d14f79f1895f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10313,7 +10313,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/aws-cloudwatch-agent-for-cluster-metrics-9144ecb9-36e3-4b82-9725-b5e1b60d565a.html">
+<a href="/meshery.io/catalog/deployment/aws-cloudwatch-agent-for-cluster-metrics-9144ecb9-36e3-4b82-9725-b5e1b60d565a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10356,7 +10356,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/logstash-8-5-1-94889315-c812-4017-bb1e-17d3e6314d66.html">
+<a href="/meshery.io/catalog/deployment/logstash-8-5-1-94889315-c812-4017-bb1e-17d3e6314d66.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10399,7 +10399,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/busybox-single-9527442a-7072-4c98-a187-1b9ce1b0001c.html">
+<a href="/meshery.io/catalog/deployment/busybox-single-9527442a-7072-4c98-a187-1b9ce1b0001c.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10442,7 +10442,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pod-resource-memory-request-limit-95cb2be3-4052-45d9-9156-34fd4b8fe17e.html">
+<a href="/meshery.io/catalog/deployment/pod-resource-memory-request-limit-95cb2be3-4052-45d9-9156-34fd4b8fe17e.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10485,7 +10485,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/dapr-oauth-authorization-to-external-service-962c49f4-39c0-4ce9-ad79-0adc78ebb4f5.html">
+<a href="/meshery.io/catalog/deployment/dapr-oauth-authorization-to-external-service-962c49f4-39c0-4ce9-ad79-0adc78ebb4f5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10528,7 +10528,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/fluentd-deployment-96c43aaf-4bd9-4f28-bc02-c64e3d26f1f8.html">
+<a href="/meshery.io/catalog/deployment/fluentd-deployment-96c43aaf-4bd9-4f28-bc02-c64e3d26f1f8.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10571,7 +10571,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/running-zookeeper-a-distributed-system-coordinator-96cc39d9-de6a-4339-96bf-096d09d9d7bd.html">
+<a href="/meshery.io/catalog/deployment/running-zookeeper-a-distributed-system-coordinator-96cc39d9-de6a-4339-96bf-096d09d9d7bd.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10614,7 +10614,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/elkk-design-kafka-977960d3-27d9-4fac-bf32-45d7ef604292.html">
+<a href="/meshery.io/catalog/deployment/elkk-design-kafka-977960d3-27d9-4fac-bf32-45d7ef604292.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10657,7 +10657,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-emails-grpc-0-0-11-tgz-9814f836-0943-4f5e-a9f5-c5802d25dfeb.html">
+<a href="/meshery.io/catalog/deployment/ms-emails-grpc-0-0-11-tgz-9814f836-0943-4f5e-a9f5-c5802d25dfeb.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10700,7 +10700,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/fluentd-kubernetes-aws-9815d6cf-ef6d-49fa-99a7-97e935af67c4.html">
+<a href="/meshery.io/catalog/deployment/fluentd-kubernetes-aws-9815d6cf-ef6d-49fa-99a7-97e935af67c4.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10743,7 +10743,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/wordpress-ha-stack-990eab50-9e7c-4f4e-93ed-410c921d9373.html">
+<a href="/meshery.io/catalog/deployment/wordpress-ha-stack-990eab50-9e7c-4f4e-93ed-410c921d9373.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10786,7 +10786,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/loxilb-clustered-load-balancer-with-cgnat-9b21dcd1-12a3-4fa2-a941-b28e72cd2b26.html">
+<a href="/meshery.io/catalog/deployment/loxilb-clustered-load-balancer-with-cgnat-9b21dcd1-12a3-4fa2-a941-b28e72cd2b26.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10829,7 +10829,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/istio-ingress-service-web-api-v1-only-9b677af7-478c-48d4-83a5-9b20d5094007.html">
+<a href="/meshery.io/catalog/deployment/istio-ingress-service-web-api-v1-only-9b677af7-478c-48d4-83a5-9b20d5094007.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10872,7 +10872,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/serve-an-llm-with-multiple-gpus-in-gke-9d3b33bf-eaf6-4d06-9dd6-64aa725ab383.html">
+<a href="/meshery.io/catalog/deployment/serve-an-llm-with-multiple-gpus-in-gke-9d3b33bf-eaf6-4d06-9dd6-64aa725ab383.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10915,7 +10915,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pv-pvc-edge-non-binding-reference-relationship-9f249a4b-13da-4ea1-860e-98c4060a444a.html">
+<a href="/meshery.io/catalog/deployment/pv-pvc-edge-non-binding-reference-relationship-9f249a4b-13da-4ea1-860e-98c4060a444a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -10958,7 +10958,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hierarchical-parent-inventory-relationship-9f358588-ba37-4ebe-852d-df4dd0c71ecb.html">
+<a href="/meshery.io/catalog/deployment/hierarchical-parent-inventory-relationship-9f358588-ba37-4ebe-852d-df4dd0c71ecb.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11001,7 +11001,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/brainstorming-template-9fc0c134-4a85-4e59-8593-e93d9cc2fce2.html">
+<a href="/meshery.io/catalog/deployment/brainstorming-template-9fc0c134-4a85-4e59-8593-e93d9cc2fce2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11044,7 +11044,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kanvas-docker-extension-architecture-a10ca98d-d978-4cfd-accb-d9834a26904f.html">
+<a href="/meshery.io/catalog/deployment/kanvas-docker-extension-architecture-a10ca98d-d978-4cfd-accb-d9834a26904f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11087,7 +11087,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/elkk-stack-with-kafka-a1eaf8c4-4da3-4cc4-ba75-edc9e808ab98.html">
+<a href="/meshery.io/catalog/deployment/elkk-stack-with-kafka-a1eaf8c4-4da3-4cc4-ba75-edc9e808ab98.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11130,7 +11130,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/keycloak-sso-with-oauth2-proxy-design-a2e7d86c-ff41-4385-9c19-81335a1204e7.html">
+<a href="/meshery.io/catalog/deployment/keycloak-sso-with-oauth2-proxy-design-a2e7d86c-ff41-4385-9c19-81335a1204e7.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11173,7 +11173,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/wordpress-26-0-0-tgz-a3a75d20-9453-4c80-a404-4d126fc72aa9.html">
+<a href="/meshery.io/catalog/deployment/wordpress-26-0-0-tgz-a3a75d20-9453-4c80-a404-4d126fc72aa9.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11216,7 +11216,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/lightrun-architecture-a5828d7d-d4eb-4e94-b013-ca804685cf15.html">
+<a href="/meshery.io/catalog/deployment/lightrun-architecture-a5828d7d-d4eb-4e94-b013-ca804685cf15.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11259,7 +11259,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/understanding-relationships-a674263f-2e62-49e5-a986-2585b13c6591.html">
+<a href="/meshery.io/catalog/deployment/understanding-relationships-a674263f-2e62-49e5-a986-2585b13c6591.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11302,7 +11302,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/apache-11-3-5-tgz-a67af210-22af-4115-a788-c64aadcd67ac.html">
+<a href="/meshery.io/catalog/deployment/apache-11-3-5-tgz-a67af210-22af-4115-a788-c64aadcd67ac.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11345,7 +11345,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/haproxy-ingress-controller-a70386a6-2b09-45dd-9c91-15b7beb0ac87.html">
+<a href="/meshery.io/catalog/deployment/haproxy-ingress-controller-a70386a6-2b09-45dd-9c91-15b7beb0ac87.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11388,7 +11388,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-catalogs-worker-a7b25ce4-0ae2-45a8-bf20-36add30d5ff5.html">
+<a href="/meshery.io/catalog/deployment/ms-catalogs-worker-a7b25ce4-0ae2-45a8-bf20-36add30d5ff5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11431,7 +11431,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/fortio-server-a7c1ed4b-0b4b-4614-afba-8d23082e27c3.html">
+<a href="/meshery.io/catalog/deployment/fortio-server-a7c1ed4b-0b4b-4614-afba-8d23082e27c3.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11474,7 +11474,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/edge-network-relationship-service-to-deployment-a7fdc9a5-4668-4e80-8580-1a557e68106e.html">
+<a href="/meshery.io/catalog/deployment/edge-network-relationship-service-to-deployment-a7fdc9a5-4668-4e80-8580-1a557e68106e.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11517,7 +11517,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kubernetes-service-for-product-page-app-a88ae43c-4a3c-4c57-b839-b1101e20f842.html">
+<a href="/meshery.io/catalog/deployment/kubernetes-service-for-product-page-app-a88ae43c-4a3c-4c57-b839-b1101e20f842.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11560,7 +11560,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kubernetes-service-traffic-distribution-a95b76ce-ceaf-4bdf-bac7-95a6773168cd.html">
+<a href="/meshery.io/catalog/deployment/kubernetes-service-traffic-distribution-a95b76ce-ceaf-4bdf-bac7-95a6773168cd.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11603,7 +11603,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ebpf-exporter-aaae149b-95d2-458f-b3c1-710fb544acad.html">
+<a href="/meshery.io/catalog/deployment/ebpf-exporter-aaae149b-95d2-458f-b3c1-710fb544acad.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11646,7 +11646,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/loxilb-multi-cloud-vpn-connectivity-aaeda8bd-2133-4e52-bc3f-5014babb23a1.html">
+<a href="/meshery.io/catalog/deployment/loxilb-multi-cloud-vpn-connectivity-aaeda8bd-2133-4e52-bc3f-5014babb23a1.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11689,7 +11689,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/untitled-design-abf90eeb-9cd9-4186-b9e4-118946f35ac4.html">
+<a href="/meshery.io/catalog/deployment/untitled-design-abf90eeb-9cd9-4186-b9e4-118946f35ac4.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11732,7 +11732,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/robot-shop-ac4014f9-d320-4a39-9364-46a1b3627b33.html">
+<a href="/meshery.io/catalog/deployment/robot-shop-ac4014f9-d320-4a39-9364-46a1b3627b33.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11775,7 +11775,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/iscsi-pod-creation-ae801c1f-8134-4f48-bc2e-d97c14f6a99c.html">
+<a href="/meshery.io/catalog/deployment/iscsi-pod-creation-ae801c1f-8134-4f48-bc2e-d97c14f6a99c.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11818,7 +11818,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/untitled-design-b00abde6-3416-4e3f-acbb-2af51adfd398.html">
+<a href="/meshery.io/catalog/deployment/untitled-design-b00abde6-3416-4e3f-acbb-2af51adfd398.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11861,7 +11861,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/publishing-test-microserivce-architecture-using-spring-cloud-b1e81bd2-787a-4bd2-88cd-932d53a57405.html">
+<a href="/meshery.io/catalog/deployment/publishing-test-microserivce-architecture-using-spring-cloud-b1e81bd2-787a-4bd2-88cd-932d53a57405.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11904,7 +11904,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/tutorial-exploring-kubernetes-pods-with-meshery-b2b05f54-fd48-44f5-bf2d-308761874d59.html">
+<a href="/meshery.io/catalog/deployment/tutorial-exploring-kubernetes-pods-with-meshery-b2b05f54-fd48-44f5-bf2d-308761874d59.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11947,7 +11947,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/persistent-volume-b319f0f5-2abd-4f33-b134-824b5ac3ba2d.html">
+<a href="/meshery.io/catalog/deployment/persistent-volume-b319f0f5-2abd-4f33-b134-824b5ac3ba2d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -11990,7 +11990,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-modules-rest-b597c1a5-a834-4f18-9351-4d78a8d4bfa2.html">
+<a href="/meshery.io/catalog/deployment/ms-modules-rest-b597c1a5-a834-4f18-9351-4d78a8d4bfa2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12033,7 +12033,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/brainstorming-template-b5f5dc10-40e3-473d-b77d-83e329285bdf.html">
+<a href="/meshery.io/catalog/deployment/brainstorming-template-b5f5dc10-40e3-473d-b77d-83e329285bdf.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12076,7 +12076,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/elastic-stack-b7782414-0dd6-486d-ba77-888577e9fa2e.html">
+<a href="/meshery.io/catalog/deployment/elastic-stack-b7782414-0dd6-486d-ba77-888577e9fa2e.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12119,7 +12119,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/replication-controller-b7bdd606-40a0-4849-a58e-d89af0d9688a.html">
+<a href="/meshery.io/catalog/deployment/replication-controller-b7bdd606-40a0-4849-a58e-d89af0d9688a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12162,7 +12162,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/keda-httprequestsscaler-b82e1abb-318b-4462-badc-494a21612381.html">
+<a href="/meshery.io/catalog/deployment/keda-httprequestsscaler-b82e1abb-318b-4462-badc-494a21612381.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12205,7 +12205,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/glusterfs-service-b991c21e-5147-4aa9-bb8d-fce2b37bb3c3.html">
+<a href="/meshery.io/catalog/deployment/glusterfs-service-b991c21e-5147-4aa9-bb8d-fce2b37bb3c3.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12248,7 +12248,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/nginx-deployment-bb80642c-2179-4817-b0b7-6d0e28151f9a.html">
+<a href="/meshery.io/catalog/deployment/nginx-deployment-bb80642c-2179-4817-b0b7-6d0e28151f9a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12291,7 +12291,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/bank-of-anthos-bbd15978-2924-48be-bac2-cdfc5331bfb2.html">
+<a href="/meshery.io/catalog/deployment/bank-of-anthos-bbd15978-2924-48be-bac2-cdfc5331bfb2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12334,7 +12334,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kubernetes-cluster-access-model-bcd881e4-eaf6-4fe0-9d8c-80a07140cab7.html">
+<a href="/meshery.io/catalog/deployment/kubernetes-cluster-access-model-bcd881e4-eaf6-4fe0-9d8c-80a07140cab7.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12377,7 +12377,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/tutorial-exploring-kubernetes-pod-be89d5ca-8a5a-4c2c-bc5e-3b974aa08380.html">
+<a href="/meshery.io/catalog/deployment/tutorial-exploring-kubernetes-pod-be89d5ca-8a5a-4c2c-bc5e-3b974aa08380.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12420,7 +12420,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hierarchical-inventory-relationship-be8c9e9e-1a74-4c5a-b128-235364399410.html">
+<a href="/meshery.io/catalog/deployment/hierarchical-inventory-relationship-be8c9e9e-1a74-4c5a-b128-235364399410.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12463,7 +12463,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/rajshree-bef1a2a2-9ae0-4d43-a277-13e8acd8149d.html">
+<a href="/meshery.io/catalog/deployment/rajshree-bef1a2a2-9ae0-4d43-a277-13e8acd8149d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12506,7 +12506,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/expose-nginx-app-with-ingress-bf5913ca-e6b3-4467-8830-7718b8b86636.html">
+<a href="/meshery.io/catalog/deployment/expose-nginx-app-with-ingress-bf5913ca-e6b3-4467-8830-7718b8b86636.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12549,7 +12549,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/aws-cloudfront-controller-bffca2b7-b3c3-4a9d-86f4-bdae70848cfa.html">
+<a href="/meshery.io/catalog/deployment/aws-cloudfront-controller-bffca2b7-b3c3-4a9d-86f4-bdae70848cfa.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12592,7 +12592,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/gke-online-serving-single-gpu-c0db1f13-46e8-481f-b5b5-27b6d2e0b74d.html">
+<a href="/meshery.io/catalog/deployment/gke-online-serving-single-gpu-c0db1f13-46e8-481f-b5b5-27b6d2e0b74d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12635,7 +12635,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/vald-architecture-c183b615-deb3-460e-b56f-55a1f87b1497.html">
+<a href="/meshery.io/catalog/deployment/vald-architecture-c183b615-deb3-460e-b56f-55a1f87b1497.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12678,7 +12678,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/meshery-certification-tracks-c2141477-379b-432e-b47e-1c89600235a5.html">
+<a href="/meshery.io/catalog/deployment/meshery-certification-tracks-c2141477-379b-432e-b47e-1c89600235a5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12721,7 +12721,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/guestbook-app-all-in-one-c288c409-3ca4-4b20-86a2-c9a28c58f986.html">
+<a href="/meshery.io/catalog/deployment/guestbook-app-all-in-one-c288c409-3ca4-4b20-86a2-c9a28c58f986.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12764,7 +12764,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kubernetes-cluster-architecture-c3180105-0fac-492c-810e-47aa41778ed2.html">
+<a href="/meshery.io/catalog/deployment/kubernetes-cluster-architecture-c3180105-0fac-492c-810e-47aa41778ed2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12807,7 +12807,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/simple-kubernetes-pod-c40ae08b-deaa-4fc5-a1e8-8081907b64a3.html">
+<a href="/meshery.io/catalog/deployment/simple-kubernetes-pod-c40ae08b-deaa-4fc5-a1e8-8081907b64a3.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12850,7 +12850,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/mattermost-operator-c60f32ae-358b-4eab-81b6-2e52ef383bab.html">
+<a href="/meshery.io/catalog/deployment/mattermost-operator-c60f32ae-358b-4eab-81b6-2e52ef383bab.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12893,7 +12893,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/devops-workflow-c6dcd76c-a837-42f6-92b2-9dbaa6115bae.html">
+<a href="/meshery.io/catalog/deployment/devops-workflow-c6dcd76c-a837-42f6-92b2-9dbaa6115bae.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12936,7 +12936,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/architecture-diagramming-c8320ac6-8b12-449b-a86f-d2a518a112c5.html">
+<a href="/meshery.io/catalog/deployment/architecture-diagramming-c8320ac6-8b12-449b-a86f-d2a518a112c5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -12979,7 +12979,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-catalogs-grpc-microservice-c8b4f9ed-ae71-47f1-b576-2c46ec927685.html">
+<a href="/meshery.io/catalog/deployment/ms-catalogs-grpc-microservice-c8b4f9ed-ae71-47f1-b576-2c46ec927685.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13022,7 +13022,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/litmus-architecture-c920fb94-6c51-463a-9b71-c370ee76adf5.html">
+<a href="/meshery.io/catalog/deployment/litmus-architecture-c920fb94-6c51-463a-9b71-c370ee76adf5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13065,7 +13065,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/k8s-gateway-api-cabdb426-864e-4009-9b83-be23badeafe5.html">
+<a href="/meshery.io/catalog/deployment/k8s-gateway-api-cabdb426-864e-4009-9b83-be23badeafe5.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13108,7 +13108,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/loxilb-5g-load-balancer-lbo-architecture-cc4fcaaa-5b7e-492c-9920-f2408bdcefed.html">
+<a href="/meshery.io/catalog/deployment/loxilb-5g-load-balancer-lbo-architecture-cc4fcaaa-5b7e-492c-9920-f2408bdcefed.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13151,7 +13151,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ec2-instances-cca2fb89-48e1-419d-8e1b-e69e1e12931a.html">
+<a href="/meshery.io/catalog/deployment/ec2-instances-cca2fb89-48e1-419d-8e1b-e69e1e12931a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13194,7 +13194,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/instana-agent-for-kubernetes-cce763fc-508a-4d3d-95da-0cfcf722d7cf.html">
+<a href="/meshery.io/catalog/deployment/instana-agent-for-kubernetes-cce763fc-508a-4d3d-95da-0cfcf722d7cf.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13237,7 +13237,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-rbac-rest-0-0-11-tgz-ce088baa-27d0-4bdd-8d89-71b4cfb8e236.html">
+<a href="/meshery.io/catalog/deployment/ms-rbac-rest-0-0-11-tgz-ce088baa-27d0-4bdd-8d89-71b4cfb8e236.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13280,7 +13280,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/consul-on-kubernetes-ce4eb460-b6c0-429d-befb-88cf2f1f883f.html">
+<a href="/meshery.io/catalog/deployment/consul-on-kubernetes-ce4eb460-b6c0-429d-befb-88cf2f1f883f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13323,7 +13323,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/uptime-kuma-d127a347-5af5-422a-b1ff-508fda5d239e.html">
+<a href="/meshery.io/catalog/deployment/uptime-kuma-d127a347-5af5-422a-b1ff-508fda5d239e.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13366,7 +13366,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kubernetes-global-balancer-d223427e-1f46-4390-8fc9-51e499c44b7d.html">
+<a href="/meshery.io/catalog/deployment/kubernetes-global-balancer-d223427e-1f46-4390-8fc9-51e499c44b7d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13409,7 +13409,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/minio-deployment-d3481e21-5000-4c90-a999-f53050863dc3.html">
+<a href="/meshery.io/catalog/deployment/minio-deployment-d3481e21-5000-4c90-a999-f53050863dc3.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13452,7 +13452,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/mattermost-server-scaling-for-azure-design-d427862d-4658-437c-97f3-44208f9c8c51.html">
+<a href="/meshery.io/catalog/deployment/mattermost-server-scaling-for-azure-design-d427862d-4658-437c-97f3-44208f9c8c51.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13495,7 +13495,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/jenkins-operator-d695eba0-7703-42f3-934f-f1779367281a.html">
+<a href="/meshery.io/catalog/deployment/jenkins-operator-d695eba0-7703-42f3-934f-f1779367281a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13538,7 +13538,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/tutorial-simple-mysql-pod-d6a40cd8-3c13-4920-a96c-b6278836565e.html">
+<a href="/meshery.io/catalog/deployment/tutorial-simple-mysql-pod-d6a40cd8-3c13-4920-a96c-b6278836565e.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13581,7 +13581,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/limit-range-d6d78cdd-6bc8-4cb9-8ed3-c392e6152576.html">
+<a href="/meshery.io/catalog/deployment/limit-range-d6d78cdd-6bc8-4cb9-8ed3-c392e6152576.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13624,7 +13624,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/clickhouse-9-4-4-tgz-d79ab97f-86bd-44d1-8a37-aa05506b2b14.html">
+<a href="/meshery.io/catalog/deployment/clickhouse-9-4-4-tgz-d79ab97f-86bd-44d1-8a37-aa05506b2b14.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13667,7 +13667,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/app-graph-d86c6005-fa0b-4f74-bb66-7e3e47cbc846.html">
+<a href="/meshery.io/catalog/deployment/app-graph-d86c6005-fa0b-4f74-bb66-7e3e47cbc846.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13710,7 +13710,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/azure-microservices-architecture-with-aks-design-d9fdd47e-84d7-4395-b9e0-1f3db50df818.html">
+<a href="/meshery.io/catalog/deployment/azure-microservices-architecture-with-aks-design-d9fdd47e-84d7-4395-b9e0-1f3db50df818.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13753,7 +13753,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/expose-kubernetes-app-with-nginx-ingress-dbc5cf33-6db9-4644-a5aa-c8df5ffaf0a6.html">
+<a href="/meshery.io/catalog/deployment/expose-kubernetes-app-with-nginx-ingress-dbc5cf33-6db9-4644-a5aa-c8df5ffaf0a6.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13796,7 +13796,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/datadog-3-127-1-tgz-dc027e0a-ae6c-4d44-9d48-76d41322902a.html">
+<a href="/meshery.io/catalog/deployment/datadog-3-127-1-tgz-dc027e0a-ae6c-4d44-9d48-76d41322902a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13839,7 +13839,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/authentik-2025-8-4-tgz-dc11f014-d259-41e3-a377-717d4fe960ae.html">
+<a href="/meshery.io/catalog/deployment/authentik-2025-8-4-tgz-dc11f014-d259-41e3-a377-717d4fe960ae.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13882,7 +13882,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/amazon-web-services-iot-architecture-diagram-df24a01a-8235-449f-8dad-4a2474059ad3.html">
+<a href="/meshery.io/catalog/deployment/amazon-web-services-iot-architecture-diagram-df24a01a-8235-449f-8dad-4a2474059ad3.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13925,7 +13925,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/airflow-25-0-2-tgz-df7815d8-10dd-4001-90b9-c37e79136133.html">
+<a href="/meshery.io/catalog/deployment/airflow-25-0-2-tgz-df7815d8-10dd-4001-90b9-c37e79136133.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -13968,7 +13968,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ec2-controller-df959bcd-09c8-40b1-bf58-47ad6be30cd7.html">
+<a href="/meshery.io/catalog/deployment/ec2-controller-df959bcd-09c8-40b1-bf58-47ad6be30cd7.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14011,7 +14011,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/configure-a-pod-to-use-a-configmap-e0989a1d-1aa1-49cb-9eb4-a963f61fd328.html">
+<a href="/meshery.io/catalog/deployment/configure-a-pod-to-use-a-configmap-e0989a1d-1aa1-49cb-9eb4-a963f61fd328.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14054,7 +14054,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/e2e-test-design-relationship-715fa8b5-5a84-4f55-899a-d461ef116177-e0d62083-2575-42ba-984b-f547812ae9ac.html">
+<a href="/meshery.io/catalog/deployment/e2e-test-design-relationship-715fa8b5-5a84-4f55-899a-d461ef116177-e0d62083-2575-42ba-984b-f547812ae9ac.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14097,7 +14097,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/nexus3-5-15-0-tgz-e0eb807e-360a-4f65-9c6e-aa9e70ff9912.html">
+<a href="/meshery.io/catalog/deployment/nexus3-5-15-0-tgz-e0eb807e-360a-4f65-9c6e-aa9e70ff9912.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14140,7 +14140,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/apisix-6-0-0-tgz-e17af2e2-b48d-42d9-98f2-01b9305c1b0f.html">
+<a href="/meshery.io/catalog/deployment/apisix-6-0-0-tgz-e17af2e2-b48d-42d9-98f2-01b9305c1b0f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14183,7 +14183,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pod-service-account-token-e2d3f5c8-3ff8-4756-8848-0c9b5797bec2.html">
+<a href="/meshery.io/catalog/deployment/pod-service-account-token-e2d3f5c8-3ff8-4756-8848-0c9b5797bec2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14226,7 +14226,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/dapr-with-kubernetes-events-e31a3c6d-2102-4215-8ea2-3ab399ca29f6.html">
+<a href="/meshery.io/catalog/deployment/dapr-with-kubernetes-events-e31a3c6d-2102-4215-8ea2-3ab399ca29f6.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14269,7 +14269,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/knative-service-e5c65f06-4616-4ce7-9fe9-cb528128d242.html">
+<a href="/meshery.io/catalog/deployment/knative-service-e5c65f06-4616-4ce7-9fe9-cb528128d242.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14312,7 +14312,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hierarchical-parent-wallet-relationship-e76bb526-8e8a-4f15-9dfe-df369bef344d.html">
+<a href="/meshery.io/catalog/deployment/hierarchical-parent-wallet-relationship-e76bb526-8e8a-4f15-9dfe-df369bef344d.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14355,7 +14355,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/online-boutique-e79ebaa2-06f1-498b-8307-c434a8911b18.html">
+<a href="/meshery.io/catalog/deployment/online-boutique-e79ebaa2-06f1-498b-8307-c434a8911b18.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14398,7 +14398,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/datadog-3-127-1-tgz-e81a4aaa-fda4-4840-88ef-5d4a6a831553.html">
+<a href="/meshery.io/catalog/deployment/datadog-3-127-1-tgz-e81a4aaa-fda4-4840-88ef-5d4a6a831553.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14441,7 +14441,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/cert-manager-architecture-copy-e81d639e-5c9b-4acb-8833-93a8e708f1b2.html">
+<a href="/meshery.io/catalog/deployment/cert-manager-architecture-copy-e81d639e-5c9b-4acb-8833-93a8e708f1b2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14484,7 +14484,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/tutorial-exploring-kubernetes-deployments-with-meshery-e92dba43-813f-4490-9b1b-541009d61ff8.html">
+<a href="/meshery.io/catalog/deployment/tutorial-exploring-kubernetes-deployments-with-meshery-e92dba43-813f-4490-9b1b-541009d61ff8.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14527,7 +14527,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/keda-setup-e958fd44-4a43-4096-9cd5-ef1e9204996f.html">
+<a href="/meshery.io/catalog/deployment/keda-setup-e958fd44-4a43-4096-9cd5-ef1e9204996f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14570,7 +14570,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/mysql-installation-with-cinder-volume-plugin-ea07d238-15f4-4693-afe2-e413b3b93d6f.html">
+<a href="/meshery.io/catalog/deployment/mysql-installation-with-cinder-volume-plugin-ea07d238-15f4-4693-afe2-e413b3b93d6f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14613,7 +14613,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/mysql-operator-ea57586d-7d26-4367-bf9e-1a0fe1fe81f3.html">
+<a href="/meshery.io/catalog/deployment/mysql-operator-ea57586d-7d26-4367-bf9e-1a0fe1fe81f3.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14656,7 +14656,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pods-image-pull-policy-ea75ea93-1f5a-4c85-8efd-0d862599fbed.html">
+<a href="/meshery.io/catalog/deployment/pods-image-pull-policy-ea75ea93-1f5a-4c85-8efd-0d862599fbed.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14699,7 +14699,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/glasskube-operator-ead48885-d494-4dfd-a53a-ddc7b05ee761.html">
+<a href="/meshery.io/catalog/deployment/glasskube-operator-ead48885-d494-4dfd-a53a-ddc7b05ee761.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14742,7 +14742,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/guestbook-app-copy-eb7a21e0-afd8-4263-94f2-e9083ac0b602.html">
+<a href="/meshery.io/catalog/deployment/guestbook-app-copy-eb7a21e0-afd8-4263-94f2-e9083ac0b602.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14785,7 +14785,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/network-service-endpoint-ec343550-04ea-440f-b17e-5de2c171194a.html">
+<a href="/meshery.io/catalog/deployment/network-service-endpoint-ec343550-04ea-440f-b17e-5de2c171194a.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14828,7 +14828,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/hello-app-ec6a41d2-d2bd-4089-b1c2-72a5c76b9313.html">
+<a href="/meshery.io/catalog/deployment/hello-app-ec6a41d2-d2bd-4089-b1c2-72a5c76b9313.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14871,7 +14871,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/iscsi-ec728414-5dd9-48a0-9be4-2ca0dffa1f2c.html">
+<a href="/meshery.io/catalog/deployment/iscsi-ec728414-5dd9-48a0-9be4-2ca0dffa1f2c.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14914,7 +14914,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kubernetes-cluster-architecture-design-ee6fcb5e-852c-446c-91f4-9715116a7844.html">
+<a href="/meshery.io/catalog/deployment/kubernetes-cluster-architecture-design-ee6fcb5e-852c-446c-91f4-9715116a7844.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -14957,7 +14957,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-licenses-rest-f0cef2ff-73cd-42a8-99d6-2ba6c88eae30.html">
+<a href="/meshery.io/catalog/deployment/ms-licenses-rest-f0cef2ff-73cd-42a8-99d6-2ba6c88eae30.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15000,7 +15000,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pet-adoption-porta-f0db31f1-10cf-4a2d-9b2d-e4c59d0522af.html">
+<a href="/meshery.io/catalog/deployment/pet-adoption-porta-f0db31f1-10cf-4a2d-9b2d-e4c59d0522af.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15043,7 +15043,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/cryptomb-yml-f129b08a-c024-441b-ba56-577c4f67665f.html">
+<a href="/meshery.io/catalog/deployment/cryptomb-yml-f129b08a-c024-441b-ba56-577c4f67665f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15086,7 +15086,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/kubernetes-architecture-f139ae76-c6a1-4a61-b7e5-62852eb689cc.html">
+<a href="/meshery.io/catalog/deployment/kubernetes-architecture-f139ae76-c6a1-4a61-b7e5-62852eb689cc.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15129,7 +15129,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/multi-tenancy-virtual-cluster-f176d529-767d-485b-a68d-79db3f6e8dd2.html">
+<a href="/meshery.io/catalog/deployment/multi-tenancy-virtual-cluster-f176d529-767d-485b-a68d-79db3f6e8dd2.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15172,7 +15172,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/ms-catalogs-rest-f2a88e2b-6b1d-476f-979a-24635502f2c8.html">
+<a href="/meshery.io/catalog/deployment/ms-catalogs-rest-f2a88e2b-6b1d-476f-979a-24635502f2c8.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15215,7 +15215,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/understanding-relationships-f4328c69-513c-4fa9-af37-27a2f1475cdf.html">
+<a href="/meshery.io/catalog/deployment/understanding-relationships-f4328c69-513c-4fa9-af37-27a2f1475cdf.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15258,7 +15258,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/redis-leader-deployment-f60a00b8-2038-48cc-9f44-818ffac4987f.html">
+<a href="/meshery.io/catalog/deployment/redis-leader-deployment-f60a00b8-2038-48cc-9f44-818ffac4987f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15301,7 +15301,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/external-dns-for-kubernetes-f732b20e-08a0-4db0-9977-90b9009ced09.html">
+<a href="/meshery.io/catalog/deployment/external-dns-for-kubernetes-f732b20e-08a0-4db0-9977-90b9009ced09.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15344,7 +15344,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/rbac-for-elasticsearch-f752c99c-cbe9-4af2-98a7-c3b7a05b94b6.html">
+<a href="/meshery.io/catalog/deployment/rbac-for-elasticsearch-f752c99c-cbe9-4af2-98a7-c3b7a05b94b6.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15387,7 +15387,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/k8s-deployment-2-f90ecf87-6ca5-4d32-8ecf-f67cb20e3061.html">
+<a href="/meshery.io/catalog/deployment/k8s-deployment-2-f90ecf87-6ca5-4d32-8ecf-f67cb20e3061.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15430,7 +15430,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/architectural-design-terraform-f967e5a4-9ca6-4fba-b9cd-5ee000576a91.html">
+<a href="/meshery.io/catalog/deployment/architectural-design-terraform-f967e5a4-9ca6-4fba-b9cd-5ee000576a91.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15473,7 +15473,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/aws-k8s-cni-yaml-f970dc8a-137e-49cc-a53e-362a924bf726.html">
+<a href="/meshery.io/catalog/deployment/aws-k8s-cni-yaml-f970dc8a-137e-49cc-a53e-362a924bf726.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15516,7 +15516,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/senthil-app-new-fb0315e9-e6e5-4120-9a2f-b479ac2d2180.html">
+<a href="/meshery.io/catalog/deployment/senthil-app-new-fb0315e9-e6e5-4120-9a2f-b479ac2d2180.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15559,7 +15559,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/serving-t5-large-language-model-with-torchserve-fb8a31f7-0adb-40e7-ac26-bffb0a0f4547.html">
+<a href="/meshery.io/catalog/deployment/serving-t5-large-language-model-with-torchserve-fb8a31f7-0adb-40e7-ac26-bffb0a0f4547.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15602,7 +15602,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/zookeeper-cluster-fde9c2da-e402-4f53-b7cd-02036ac65043.html">
+<a href="/meshery.io/catalog/deployment/zookeeper-cluster-fde9c2da-e402-4f53-b7cd-02036ac65043.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15645,7 +15645,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/edge-reference-relationship-fdf70802-9e51-4e8e-a0a9-0f0480bf5741.html">
+<a href="/meshery.io/catalog/deployment/edge-reference-relationship-fdf70802-9e51-4e8e-a0a9-0f0480bf5741.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15688,7 +15688,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pod-liveness-fe3bf101-18ec-4a7e-86bb-3f69a53b1e5f.html">
+<a href="/meshery.io/catalog/deployment/pod-liveness-fe3bf101-18ec-4a7e-86bb-3f69a53b1e5f.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15731,7 +15731,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/pod-resource-memory-request-limit-ff84d220-d1ea-44ee-8473-a44b972ff85b.html">
+<a href="/meshery.io/catalog/deployment/pod-resource-memory-request-limit-ff84d220-d1ea-44ee-8473-a44b972ff85b.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15774,7 +15774,7 @@
                 style="display: none;">
                 
 
-<a href="/catalog/deployment/prometheus-postgres-exporter-fffb7c9d-3051-4dd9-a198-39aee88da1d6.html">
+<a href="/meshery.io/catalog/deployment/prometheus-postgres-exporter-fffb7c9d-3051-4dd9-a198-39aee88da1d6.html">
 <div class= "card link">  
     <div class="card-inner">
       <div class="front">
@@ -15841,7 +15841,7 @@
         <div class="image flex" style="flex-flow: column wrap;">
             <div align="center" style="margin-top: 3rem;">
                 <div style="display: flex;">
-                    <img src="/assets/images/features/environments.gif" class="screenshot" alt="Multi-cluster Kubernetes Manager" loading="lazy" />
+                    <img src="/meshery.io/assets/images/features/environments.gif" class="screenshot" alt="Multi-cluster Kubernetes Manager" loading="lazy" />
                 </div>
             </div>
         </div>
@@ -15863,7 +15863,7 @@
         </div>
         <div class="image">
             <a href="https://raw.githubusercontent.com/meshery/meshery.io/master/assets/images/screens/meshery-performance.gif" data-fancybox="images" data-caption="Baseline and track your cloud native performance from release to release.">
-                <img src="/assets/images/screens/meshery-performance.gif" alt="Microservices Performance Comparison" class="screenshot" loading="lazy" />
+                <img src="/meshery.io/assets/images/screens/meshery-performance.gif" alt="Microservices Performance Comparison" class="screenshot" loading="lazy" />
             </a>
         </div>
     </div>
