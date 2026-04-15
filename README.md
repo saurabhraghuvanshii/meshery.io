@@ -7,7 +7,7 @@
 <img alt="Shows an illustrated light mode meshery logo in light color mode and a dark mode meshery logo dark color mode." src="./assets/images/logos/meshery-logo-light-text-side.svg" width="70%" align="center" style="margin-bottom:20px;"> </picture>
 </a>
 
-<br/><br/></p>
+<br/><br/>  </p>
 </picture>
 
 ## Meshery.io
