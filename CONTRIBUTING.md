@@ -3,7 +3,7 @@ You want to contribute to the project? Yay! 🎈 Please do. 🎈
 
 ## Issues & Pull Requests
 
-### Creating an Issue
+### Creating an Issue 
 
 Before **creating** an Issue i.e for `features`/`bugs`/`improvements` please follow these steps:
 
