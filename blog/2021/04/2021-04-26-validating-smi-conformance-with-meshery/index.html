@@ -21,21 +21,21 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="With the increasing adoption of Service Mesh Interface by what is a vibrant and diverse community of both service mesh providers and ecosystem integrators, the need for verification and validation of SMI implementations is clear. We’re still counting, however, as of this writing SMI has been adopted by more than 10 of the available service meshes and ecosystem tools. As you can see on the service mesh landscape, the last few significant, new service mesh project / product announcements have proclaimed SMI compatibility from the start. Validating consistency of these implementations is key to upholding the value of SMI itself." />
 <meta property="og:description" content="With the increasing adoption of Service Mesh Interface by what is a vibrant and diverse community of both service mesh providers and ecosystem integrators, the need for verification and validation of SMI implementations is clear. We’re still counting, however, as of this writing SMI has been adopted by more than 10 of the available service meshes and ecosystem tools. As you can see on the service mesh landscape, the last few significant, new service mesh project / product announcements have proclaimed SMI compatibility from the start. Validating consistency of these implementations is key to upholding the value of SMI itself." />
-<link rel="canonical" href="$%7BJEKYLL_SITE_URL%7D/$%7BJEKYLL_BASEURL%7D/blog/2021/04/2021-04-26-validating-smi-conformance-with-meshery/" />
-<meta property="og:url" content="$%7BJEKYLL_SITE_URL%7D/$%7BJEKYLL_BASEURL%7D/blog/2021/04/2021-04-26-validating-smi-conformance-with-meshery/" />
+<link rel="canonical" href="https://saurabhraghuvanshii.github.io/meshery.io/blog/2021/04/2021-04-26-validating-smi-conformance-with-meshery/" />
+<meta property="og:url" content="https://saurabhraghuvanshii.github.io/meshery.io/blog/2021/04/2021-04-26-validating-smi-conformance-with-meshery/" />
 <meta property="og:site_name" content="Meshery" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-04-26T18:00:00+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Validating SMI Conformance with Meshery" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Lee Calcote"},"dateModified":"2021-04-26T18:00:00+00:00","datePublished":"2021-04-26T18:00:00+00:00","description":"With the increasing adoption of Service Mesh Interface by what is a vibrant and diverse community of both service mesh providers and ecosystem integrators, the need for verification and validation of SMI implementations is clear. We’re still counting, however, as of this writing SMI has been adopted by more than 10 of the available service meshes and ecosystem tools. As you can see on the service mesh landscape, the last few significant, new service mesh project / product announcements have proclaimed SMI compatibility from the start. Validating consistency of these implementations is key to upholding the value of SMI itself.","headline":"Validating SMI Conformance with Meshery","mainEntityOfPage":{"@type":"WebPage","@id":"$%7BJEKYLL_SITE_URL%7D/$%7BJEKYLL_BASEURL%7D/blog/2021/04/2021-04-26-validating-smi-conformance-with-meshery/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"$%7BJEKYLL_SITE_URL%7D/$%7BJEKYLL_BASEURL%7D/assets/images/logos/meshery-gradient.png"},"name":"Lee Calcote"},"url":"$%7BJEKYLL_SITE_URL%7D/$%7BJEKYLL_BASEURL%7D/blog/2021/04/2021-04-26-validating-smi-conformance-with-meshery/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Lee Calcote"},"dateModified":"2021-04-26T18:00:00+00:00","datePublished":"2021-04-26T18:00:00+00:00","description":"With the increasing adoption of Service Mesh Interface by what is a vibrant and diverse community of both service mesh providers and ecosystem integrators, the need for verification and validation of SMI implementations is clear. We’re still counting, however, as of this writing SMI has been adopted by more than 10 of the available service meshes and ecosystem tools. As you can see on the service mesh landscape, the last few significant, new service mesh project / product announcements have proclaimed SMI compatibility from the start. Validating consistency of these implementations is key to upholding the value of SMI itself.","headline":"Validating SMI Conformance with Meshery","mainEntityOfPage":{"@type":"WebPage","@id":"https://saurabhraghuvanshii.github.io/meshery.io/blog/2021/04/2021-04-26-validating-smi-conformance-with-meshery/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://saurabhraghuvanshii.github.io/meshery.io/assets/images/logos/meshery-gradient.png"},"name":"Lee Calcote"},"url":"https://saurabhraghuvanshii.github.io/meshery.io/blog/2021/04/2021-04-26-validating-smi-conformance-with-meshery/"}</script>
 <!-- End Jekyll SEO tag -->
- <link type="application/atom+xml" rel="alternate" href="$%7BJEKYLL_SITE_URL%7D/$%7BJEKYLL_BASEURL%7D/feed.xml" title="Meshery" /> 
-    <link rel="stylesheet" href="${JEKYLL_BASEURL}/css/stellarnav.css" />
+ <link type="application/atom+xml" rel="alternate" href="https://saurabhraghuvanshii.github.io/meshery.io/feed.xml" title="Meshery" /> 
+    <link rel="stylesheet" href="/meshery.io/css/stellarnav.css" />
     
-    <link rel="stylesheet" href="${JEKYLL_BASEURL}/css/screen.css" />
-    <link rel="icon" type="image/png" href="${JEKYLL_BASEURL}/favicon.ico" />
+    <link rel="stylesheet" href="/meshery.io/css/screen.css" />
+    <link rel="icon" type="image/png" href="/meshery.io/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open+Sans"
@@ -44,7 +44,7 @@
       {
         "@context": "http://schema.org",
         "@type": "WebSite",
-        "url": "${JEKYLL_SITE_URL}",
+        "url": "https://saurabhraghuvanshii.github.io",
         "name": "Meshery",
         "description": "The extensible cloud native manager. Confidently wrangle cloud native infrastructure with Meshery."
       }
@@ -53,7 +53,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
-    <link rel="stylesheet" href="${JEKYLL_BASEURL}/css/subscribe.css" />
+    <link rel="stylesheet" href="/meshery.io/css/subscribe.css" />
 
 	
     
@@ -78,7 +78,7 @@
 
       <script>
         
-        window.siteBaseUrl = "${JEKYLL_BASEURL}";
+        window.siteBaseUrl = "/meshery.io";
 
         const body = document.body;
     
@@ -137,11 +137,11 @@
     <div class="container nav-container">
   
       <div class="project-name">
-        <a href="${JEKYLL_BASEURL}/">
-          <img src="${JEKYLL_BASEURL}/assets/images/logos/meshery-logo.png" alt="Meshery Logo" />&nbsp;
-          <img src="${JEKYLL_BASEURL}/assets/images/logos/meshery-logo-text.png"
-            data-logo-for-dark="${JEKYLL_BASEURL}/assets/images/logos/meshery-logo-text.png"
-            data-logo-for-light="${JEKYLL_BASEURL}/assets/images/logos/meshery-logo-text-dark.png" alt="Meshery Logo"
+        <a href="/meshery.io/">
+          <img src="/meshery.io/assets/images/logos/meshery-logo.png" alt="Meshery Logo" />&nbsp;
+          <img src="/meshery.io/assets/images/logos/meshery-logo-text.png"
+            data-logo-for-dark="/meshery.io/assets/images/logos/meshery-logo-text.png"
+            data-logo-for-light="/meshery.io/assets/images/logos/meshery-logo-text-dark.png" alt="Meshery Logo"
             id="logo-dark-light" />
         </a>
       </div>
@@ -166,7 +166,7 @@
 				
 				
 							
-				<a href="${JEKYLL_BASEURL}/catalog
+				<a href="/meshery.io/catalog
 "   class="nav-text"
 					>
 					Catalog
@@ -214,7 +214,7 @@
 							
 					
 							
-				<a href="${JEKYLL_BASEURL}/community
+				<a href="/meshery.io/community
 "   class="nav-text"
 					>
 					Community
@@ -417,7 +417,7 @@
 				
 				
 							
-				<a href="${JEKYLL_BASEURL}/#getting-started
+				<a href="/meshery.io/#getting-started
 "   class="nav-text highlight"
 					>
 					Getting Started
@@ -432,9 +432,9 @@
 </nav>
       <button class="nav-mode-icon" id="mode-toggle-btn" style="text-align: center; background: transparent;">
         <img class="nav-text" id="logo-dark-light"
-          src="${JEKYLL_BASEURL}/assets/images/nav-icons/mode-toggle-icon-moon.png"
-          data-logo-for-dark="${JEKYLL_BASEURL}/assets/images/nav-icons/mode-toggle-icon-moon.png"
-          data-logo-for-light="${JEKYLL_BASEURL}/assets/images/nav-icons/mode-toggle-icon-sun.png" alt="theme-logo" />
+          src="/meshery.io/assets/images/nav-icons/mode-toggle-icon-moon.png"
+          data-logo-for-dark="/meshery.io/assets/images/nav-icons/mode-toggle-icon-moon.png"
+          data-logo-for-light="/meshery.io/assets/images/nav-icons/mode-toggle-icon-sun.png" alt="theme-logo" />
       </button>
     </div>
   </header>
@@ -457,11 +457,11 @@
 	<span class="blog-filters">
 	
 		<span class="blog-filter">
-			<a href="${JEKYLL_BASEURL}/blog/category/service-mesh/">service-mesh</a>
+			<a href="/meshery.io/blog/category/service-mesh/">service-mesh</a>
 		</span>
 	
 		<span class="blog-filter">
-			<a href="${JEKYLL_BASEURL}/blog/category/gitops/">gitops</a>
+			<a href="/meshery.io/blog/category/gitops/">gitops</a>
 		</span>
 	
 	</span>
@@ -473,7 +473,7 @@
 
   <div class="post-content">
     <div class="row" style="width:220px;float:left;padding:20px;text-align:center;">
-<img src="${JEKYLL_BASEURL}/assets/images/posts/2021/2021-04-26-validating-smi-conformance-with-meshery/smi-conformance.png#left" style="width:70%;" alt="SMI Conformance Checklist" />
+<img src="/meshery.io/assets/images/posts/2021/2021-04-26-validating-smi-conformance-with-meshery/smi-conformance.png#left" style="width:70%;" alt="SMI Conformance Checklist" />
 </div>
 <p>With the increasing adoption of Service Mesh Interface by what is a vibrant and diverse community of both service mesh providers and ecosystem integrators, the need for verification and validation of SMI implementations is clear. We’re still counting, however, as of this writing SMI has been adopted by more than 10 of the available service meshes and ecosystem tools. As you can see on the <a href="https://layer5.io/service-mesh-landscape">service mesh landscape</a>, the last few significant, new service mesh project / product announcements have proclaimed SMI compatibility from the start. Validating consistency of these implementations is key to upholding the value of SMI itself.</p>
 
@@ -482,7 +482,7 @@
 <h2 id="conforming-to-smi">Conforming to SMI</h2>
 
 <div style="text-align:center;padding:10px">
-<img src="${JEKYLL_BASEURL}/assets/images/posts/2021/2021-04-26-validating-smi-conformance-with-meshery/smi-comformance-initiative-overview.png" style="width:100%" alt="SMI Conformance Program Overview" /></div>
+<img src="/meshery.io/assets/images/posts/2021/2021-04-26-validating-smi-conformance-with-meshery/smi-comformance-initiative-overview.png" style="width:100%" alt="SMI Conformance Program Overview" /></div>
 
 <p>The scope of the <a href="https://layer5.io/projects/service-mesh-interface-conformance">SMI Conformance</a> initiative includes all service mesh projects participating in the Service Mesh Interface specification. The goal of this initiative is to provide open tooling for validation of SMI specifications, instilling user confidence in the SMI implementation of their chosen service mesh. This validation initiative is not a full-blown certification program, yet, but has all of the makings to become one:</p>
 
@@ -560,7 +560,7 @@
         <div class="links">
 
           
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url=%24%7BJEKYLL_SITE_URL%7D%2Fblog%2F2021%2F04%2F2021-04-26-validating-smi-conformance-with-meshery%2F&summary=Validating+SMI+Conformance+with+Meshery" target="_blank" rel="noopener" title="Share on LinkedIn">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsaurabhraghuvanshii.github.io%2Fblog%2F2021%2F04%2F2021-04-26-validating-smi-conformance-with-meshery%2F&summary=Validating+SMI+Conformance+with+Meshery" target="_blank" rel="noopener" title="Share on LinkedIn">
             <img src="/assets/images/logos/linkedin-dark.svg"
                 data-logo-for-dark="/assets/images/logos/linkedin-light.svg"
                 data-logo-for-light="/assets/images/logos/linkedin-dark.svg"
@@ -569,7 +569,7 @@
           
           
           
-          <a href="https://x.com/intent/tweet?text=Validating+SMI+Conformance+with+Meshery&url=%24%7BJEKYLL_SITE_URL%7D%2Fblog%2F2021%2F04%2F2021-04-26-validating-smi-conformance-with-meshery%2F&hashtags=meshery&via=mesheryio" target="_blank" rel="noopener" title="Share on Twitter/X">
+          <a href="https://x.com/intent/tweet?text=Validating+SMI+Conformance+with+Meshery&url=https%3A%2F%2Fsaurabhraghuvanshii.github.io%2Fblog%2F2021%2F04%2F2021-04-26-validating-smi-conformance-with-meshery%2F&hashtags=meshery&via=mesheryio" target="_blank" rel="noopener" title="Share on Twitter/X">
             <img src="/assets/images/logos/twitter-dark.svg"
                 data-logo-for-dark="/assets/images/logos/twitter-light.svg"
                 data-logo-for-light="/assets/images/logos/twitter-dark.svg"
@@ -578,7 +578,7 @@
           
           
           
-          <a href="https://bsky.app/intent/compose?text=Validating+SMI+Conformance+with+Meshery+by+%40mesheryio.bsky.social+%24%7BJEKYLL_SITE_URL%7D%2Fblog%2F2021%2F04%2F2021-04-26-validating-smi-conformance-with-meshery%2F+" target="_blank" rel="noopener" title="Share on Bluesky">
+          <a href="https://bsky.app/intent/compose?text=Validating+SMI+Conformance+with+Meshery+by+%40mesheryio.bsky.social+https%3A%2F%2Fsaurabhraghuvanshii.github.io%2Fblog%2F2021%2F04%2F2021-04-26-validating-smi-conformance-with-meshery%2F+" target="_blank" rel="noopener" title="Share on Bluesky">
             <img src="/assets/images/logos/bluesky-dark.svg"
                 data-logo-for-dark="/assets/images/logos/bluesky-dark.svg"
                 data-logo-for-light="/assets/images/logos/bluesky-light.svg" 
@@ -593,12 +593,12 @@
       
       <a
         class="prev"
-        href="${JEKYLL_BASEURL}/blog/2020/12/2020-12-04-service-mesh-offers-promising-solution-for-cloud-native-networking/
+        href="/meshery.io/blog/2020/12/2020-12-04-service-mesh-offers-promising-solution-for-cloud-native-networking/
 "
         >&laquo; Service Mesh Offers Promising Solution for Cloud Native Networking</a
       >
        
-      <a class="next" href="${JEKYLL_BASEURL}/blog/2022/01/2022-01-26-pipelining-service-mesh-specifications/
+      <a class="next" href="/meshery.io/blog/2022/01/2022-01-26-pipelining-service-mesh-specifications/
 "
         >Pipelining Service Mesh Specifications &raquo;</a
       >
@@ -640,7 +640,7 @@
 					<h2>
 						
 						<a target="_blank"  
-						href="${JEKYLL_BASEURL}/community
+						href="/meshery.io/community
 " class="community-icon" >
 						
 						
@@ -651,7 +651,7 @@
 				</li>
 				
 				<li><a 
-						href="${JEKYLL_BASEURL}/blog
+						href="/meshery.io/blog
 " class="blog-icon" >
 						
 						
@@ -662,7 +662,7 @@
 						Blog</a></li>
 				
 				<li><a 
-						href="${JEKYLL_BASEURL}/subscribe
+						href="/meshery.io/subscribe
 " class="mail-icon" >
 						
 						
@@ -673,7 +673,7 @@
 						Mailing Lists</a></li>
 				
 				<li><a 
-						href="${JEKYLL_BASEURL}/calendar
+						href="/meshery.io/calendar
 " class="calendar-icon" >
 						
 						
@@ -684,7 +684,7 @@
 						Calendar</a></li>
 				
 				<li><a target="_blank" 
-						href="${JEKYLL_BASEURL}/programs
+						href="/meshery.io/programs
 " class="internship-icon" >
 						
 						
@@ -695,7 +695,7 @@
 						Internships</a></li>
 				
 				<li><a target="_blank" 
-						href="${JEKYLL_BASEURL}/community#discussion-forums
+						href="/meshery.io/community#discussion-forums
 " class="forum-icon" >
 						
 						
@@ -712,7 +712,7 @@
 					<h2>
 						
 						<a  
-						href="${JEKYLL_BASEURL}/#getting-started
+						href="/meshery.io/#getting-started
 " >
 						
 						Getting Started</a>
@@ -720,19 +720,19 @@
 				</li>
 				
 				<li><a 
-						href="${JEKYLL_BASEURL}/features
+						href="/meshery.io/features
 " >
 						
 						Features</a></li>
 				
 				<li><a 
-						href="${JEKYLL_BASEURL}/#getting-started
+						href="/meshery.io/#getting-started
 " >
 						
 						Run Meshery</a></li>
 				
 				<li><a target="_blank" 
-						href="${JEKYLL_BASEURL}/integrations
+						href="/meshery.io/integrations
 " >
 						
 						Integrations</a></li>
@@ -750,7 +750,7 @@
 					<h2>
 						
 						<a  
-						href="${JEKYLL_BASEURL}/community#resources
+						href="/meshery.io/community#resources
 " >
 						
 						Resources</a>
@@ -764,7 +764,7 @@
 						Docs</a></li>
 				
 				<li><a 
-						href="${JEKYLL_BASEURL}/catalog
+						href="/meshery.io/catalog
 " >
 						
 						Meshery Catalog</a></li>
@@ -776,7 +776,7 @@
 						User Tutorials</a></li>
 				
 				<li><a 
-						href="${JEKYLL_BASEURL}/talks-and-trainings#trainings
+						href="/meshery.io/talks-and-trainings#trainings
 " >
 						
 						Contributor Trainings</a></li>
@@ -905,10 +905,10 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script src="${JEKYLL_BASEURL}/js/stellarnav.min.js"></script>
+<script src="/meshery.io/js/stellarnav.min.js"></script>
 
 
-<script src="${JEKYLL_BASEURL}/js/main.js"></script>
+<script src="/meshery.io/js/main.js"></script>
 
 <!-- Site Navigation Menu -->
 <script type="text/javascript">
@@ -919,7 +919,7 @@
 </script>
 <!--Script for Copy to Clipboard-->
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-<script src="${JEKYLL_BASEURL}/js/vanilla-tilt.min.js"></script>
+<script src="/meshery.io/js/vanilla-tilt.min.js"></script>
 
 <script>
 

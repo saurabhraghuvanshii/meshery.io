@@ -1,3 +1,3 @@
 User-agent: *
 Allow:
-Sitemap: ${JEKYLL_SITE_URL}/sitemap.xml
+Sitemap: https://saurabhraghuvanshii.github.io/sitemap.xml
