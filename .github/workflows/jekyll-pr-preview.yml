@@ -40,13 +40,12 @@ jobs:
           ruby-version: '3.2.2'
           bundler-cache: true
 
-      # 🔥 Build preview (dynamic baseurl)
       - name: Build PR preview
         if: github.event.action != 'closed'
         env:
           JEKYLL_ENV: production
-          JEKYLL_SITE_URL: https://${{ github.repository_owner }}.github.io
-          JEKYLL_BASEURL: /${{ github.event.repository.name }}/pr-preview/pr-${{ github.event.pull_request.number }}
+          JEKYLL_SITE_URL: https://drawnew.xyz
+          JEKYLL_BASEURL: /pr-preview/pr-${{ github.event.pull_request.number }}
         run: |
           cat > _config.ci.yml <<EOF
           url: "${JEKYLL_SITE_URL}"
@@ -55,7 +54,6 @@ jobs:
 
           bundle exec jekyll build --config _config.yml,_config.ci.yml
 
-          # Prevent indexing
           echo -e "User-agent: *\nDisallow: /" > _site/robots.txt
 
       # 🔹 Deploy preview
