@@ -34,6 +34,8 @@ jobs:
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production
+          JEKYLL_SITE_URL: ${{ vars.JEKYLL_SITE_URL || 'https://meshery.io' }}
+          JEKYLL_BASEURL: ${{ vars.JEKYLL_BASEURL || '' }}
         run: |
           bundle exec jekyll build
           touch _site/.nojekyll

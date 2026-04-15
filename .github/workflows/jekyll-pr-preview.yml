@@ -46,6 +46,8 @@ jobs:
         if: github.event.action != 'closed'
         env:
           JEKYLL_ENV: production
+          JEKYLL_SITE_URL: https://${{ github.repository_owner }}.github.io
+          JEKYLL_BASEURL: /${{ github.event.repository.name }}/pr-preview/pr-${{ github.event.pull_request.number }}
         run: |
           bundle exec jekyll build
 
