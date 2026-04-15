@@ -3,7 +3,7 @@
     {
       "id": "blog-meshery-v1-0-general-availability",
       "title": "Meshery v1.0 is Generally Available",
-      "url": "/meshery.io/blog/meshery-v1.0-general-availability/",
+      "url": "/blog/meshery-v1.0-general-availability/",
       "date": "2026-03-23",
       "author": "Meshery Maintainers",
       "categories": ["meshery","releases","cloud-native","kubecon"],
@@ -14,7 +14,7 @@
     {
       "id": "blog-2026-03-mesheryctl-relationship-cmds",
       "title": "Mesheryctl Relationship Commands Promoted From Experimental",
-      "url": "/meshery.io/blog/2026/03/2026-03-10-mesheryctl-relationship-cmds/",
+      "url": "/blog/2026/03/2026-03-10-mesheryctl-relationship-cmds/",
       "date": "2026-03-10",
       "author": "Matthieu Evrin",
       "categories": ["mesheryctl"],
@@ -25,7 +25,7 @@
     {
       "id": "blog-2026-02-meshery-workspaces-enabling-cross-team-collaboration",
       "title": "Meshery Workspaces",
-      "url": "/meshery.io/blog/2026/02/2026-02-16-meshery-workspaces-enabling-cross-team-collaboration/",
+      "url": "/blog/2026/02/2026-02-16-meshery-workspaces-enabling-cross-team-collaboration/",
       "date": "2026-02-16",
       "author": "Meshery Team",
       "categories": ["meshery","workspaces","platform-engineering","collaboration"],
@@ -36,7 +36,7 @@
     {
       "id": "blog-2026-01-certified-meshery-contributors-share-their-experience",
       "title": "Certified Meshery Contributors Share Their Experiences",
-      "url": "/meshery.io/blog/2026/01/2026-01-28-certified-meshery-contributors-share-their-experience/",
+      "url": "/blog/2026/01/2026-01-28-certified-meshery-contributors-share-their-experience/",
       "date": "2026-01-28",
       "author": "Meshery Maintainers",
       "categories": ["community","open-source"],
@@ -47,7 +47,7 @@
     {
       "id": "blog-2025-meshery-extensions-org",
       "title": "The Meshery Umbrella Expands",
-      "url": "/meshery.io/blog/2025/meshery-ecosystem-expansion",
+      "url": "/blog/2025/meshery-ecosystem-expansion",
       "date": "2025-11-04",
       "author": "Lee Calcote, Sangram Rath, Matthieu Evrin, Mia Grenell",
       "categories": ["meshery","open-source","governance","extensions"],
@@ -58,7 +58,7 @@
     {
       "id": "blog-meshery-6th-highest-velocity-cncf-project",
       "title": "Meshery, the Rocket Ship",
-      "url": "/meshery.io/blog/sixth-highest-velocity-cncf-project",
+      "url": "/blog/sixth-highest-velocity-cncf-project",
       "date": "2025-11-04",
       "author": "Meshery Authors",
       "categories": ["community","milestones"],
@@ -69,7 +69,7 @@
     {
       "id": "blog-2025-11-mesheryctl-new-cmds-org-workspace",
       "title": "Meshery CLI Commands for Organization, Workspaces, and Connections",
-      "url": "/meshery.io/blog/2025/11/2025-10-31-mesheryctl-new-cmds-org-workspace/",
+      "url": "/blog/2025/11/2025-10-31-mesheryctl-new-cmds-org-workspace/",
       "date": "2025-11-03",
       "author": "Aadhitya Amarendiran",
       "categories": ["mesheryctl"],
@@ -80,7 +80,7 @@
     {
       "id": "blog-2025-10-mesehryctl-e2e-test-introduction",
       "title": "Mesheryctl End-To-End Testing Introduction",
-      "url": "/meshery.io/blog/2025/10/2025-10-30-mesehryctl-e2e-test-introduction/",
+      "url": "/blog/2025/10/2025-10-30-mesehryctl-e2e-test-introduction/",
       "date": "2025-10-30",
       "author": "Matthieu EVRIN",
       "categories": ["mesheryctl","test"],
@@ -91,7 +91,7 @@
     {
       "id": "blog-2025-10-mesheryctl-model-init",
       "title": "mesheryctl model init and build explained",
-      "url": "/meshery.io/blog/2025/10/2025-10-29-mesheryctl-model-init/",
+      "url": "/blog/2025/10/2025-10-29-mesheryctl-model-init/",
       "date": "2025-10-29",
       "author": "Matthieu Evrin",
       "categories": ["releases","mesheryctl"],
@@ -102,7 +102,7 @@
     {
       "id": "blog-2025-10-certified-meshery-contributor",
       "title": "Announcing the Certified Meshery Contributor (CMC)",
-      "url": "/meshery.io/blog/2025/10/2025-10-27-certified-meshery-contributor/",
+      "url": "/blog/2025/10/2025-10-27-certified-meshery-contributor/",
       "date": "2025-10-27",
       "author": "Meshery Maintainers",
       "categories": ["community","open-source"],
@@ -113,7 +113,7 @@
     {
       "id": "blog-2025-09-navigating-hacktoberfest-2025",
       "title": "Hacktoberfest 2025 Kickoff",
-      "url": "/meshery.io/blog/2025/09/2025-09-30-navigating-hacktoberfest-2025/",
+      "url": "/blog/2025/09/2025-09-30-navigating-hacktoberfest-2025/",
       "date": "2025-09-30",
       "author": "Ritesh Karankal and Lee Calcote",
       "categories": ["community","open-source"],
@@ -124,7 +124,7 @@
     {
       "id": "blog-2025-04-improving-mesherys-ui-e2e-tests",
       "title": "Improving Meshery UI's E2E Tests",
-      "url": "/meshery.io/blog/2025/04/2025-04-01-improving-mesherys-ui-e2e-tests/",
+      "url": "/blog/2025/04/2025-04-01-improving-mesherys-ui-e2e-tests/",
       "date": "2025-04-04",
       "author": "Ian Whitney",
       "categories": ["playwright","e2e-testing","contributors"],
@@ -135,7 +135,7 @@
     {
       "id": "blog-2025-03-meshery-reaches-7000-stars",
       "title": "Meshery Reaches 7,000 Stars",
-      "url": "/meshery.io/blog/2025/03/2025-3-31-meshery-reaches-7000-stars/",
+      "url": "/blog/2025/03/2025-3-31-meshery-reaches-7000-stars/",
       "date": "2025-03-31",
       "author": "Meshery Authors",
       "categories": ["community","milestones"],
@@ -146,7 +146,7 @@
     {
       "id": "blog-2025-03-meshery-at-kubecon-eu-2025-security-slam",
       "title": "Meshery to Participate in Security Slam",
-      "url": "/meshery.io/blog/2025/03/2025-03-27-meshery-at-kubecon-eu-2025-security-slam/",
+      "url": "/blog/2025/03/2025-03-27-meshery-at-kubecon-eu-2025-security-slam/",
       "date": "2025-03-27",
       "author": "Meshery Maintainers",
       "categories": ["kubecon","events","security"],
@@ -157,7 +157,7 @@
     {
       "id": "blog-2025-02-harnessing-organizations-for-multi-tenancy",
       "title": "Harnessing Organizations for Multi-Tenancy in Meshery",
-      "url": "/meshery.io/blog/2025/02/2025-02-17-harnessing-organizations-for-multi-tenancy/",
+      "url": "/blog/2025/02/2025-02-17-harnessing-organizations-for-multi-tenancy/",
       "date": "2025-02-17",
       "author": "Meshery Authors",
       "categories": ["collaboration","platform-engineering","multi-tenancy"],
@@ -168,7 +168,7 @@
     {
       "id": "blog-2025-02-ninth-highest-velocity-cncf-project",
       "title": "Meshery's Momentum",
-      "url": "/meshery.io/blog/2025/02/2025-02-01-ninth-highest-velocity-cncf-project/",
+      "url": "/blog/2025/02/2025-02-01-ninth-highest-velocity-cncf-project/",
       "date": "2025-02-01",
       "author": "Meshery Authors",
       "categories": ["community","milestones"],
@@ -179,7 +179,7 @@
     {
       "id": "blog-2024-12-meshery-v0-8-0-release-announcement",
       "title": "Meshery v0.8.0",
-      "url": "/meshery.io/blog/2024/12/2024-12-20-meshery-v0-8-0-release-announcement/",
+      "url": "/blog/2024/12/2024-12-20-meshery-v0-8-0-release-announcement/",
       "date": "2024-12-20",
       "author": "Meshery Maintainers",
       "categories": ["releases","announcements","milestones"],
@@ -190,7 +190,7 @@
     {
       "id": "blog-2024-11-contributing-to-meshery-models",
       "title": "Share Your Meshery Models",
-      "url": "/meshery.io/blog/2024/11/2024-11-06-contributing-to-meshery-models/",
+      "url": "/blog/2024/11/2024-11-06-contributing-to-meshery-models/",
       "date": "2024-11-06",
       "author": "Meshery Authors",
       "categories": ["meshery","mesheryctl","models"],
@@ -201,7 +201,7 @@
     {
       "id": "blog-2024-10-meshery-is-not-a-service-mesh-manager",
       "title": "Meshery is not a Service Mesh Manager",
-      "url": "/meshery.io/blog/2024/10/2024-10-01-meshery-is-not-a-service-mesh-manager/",
+      "url": "/blog/2024/10/2024-10-01-meshery-is-not-a-service-mesh-manager/",
       "date": "2024-10-01",
       "author": "Lee Calcote",
       "categories": ["meshery"],
@@ -212,7 +212,7 @@
     {
       "id": "blog-2024-08-infrastructure-design-by-meshery",
       "title": "Infrastructure as Design by Meshery",
-      "url": "/meshery.io/blog/2024/08/2024-08-14-infrastructure-design-by-meshery/",
+      "url": "/blog/2024/08/2024-08-14-infrastructure-design-by-meshery/",
       "date": "2024-08-13",
       "author": "Vivek Vishal",
       "categories": ["meshery","designs"],
@@ -223,7 +223,7 @@
     {
       "id": "blog-2024-06-more-designs",
       "title": "🎉 Over 200 Meshery Designs Now Available on ArtifactHub!",
-      "url": "/meshery.io/blog/2024/06/2024-06-19-more-designs/",
+      "url": "/blog/2024/06/2024-06-19-more-designs/",
       "date": "2024-06-25",
       "author": "Chris Carrier",
       "categories": ["artifact-hub","designs"],
@@ -234,7 +234,7 @@
     {
       "id": "blog-2024-04-designs-on-artifacthub",
       "title": "📢 Meshery Designs Now Supported on Artifact Hub!",
-      "url": "/meshery.io/blog/2024/04/2024-04-09-designs-on-artifacthub/",
+      "url": "/blog/2024/04/2024-04-09-designs-on-artifacthub/",
       "date": "2024-04-24",
       "author": "Chris Carrier, Lee Calcote",
       "categories": ["designs","artifact-hub"],
@@ -245,7 +245,7 @@
     {
       "id": "blog-2024-03-models-designs-legos",
       "title": "Lego Bricks and Lego Instructions",
-      "url": "/meshery.io/blog/2024/03/2024-03-29-models-designs-legos/",
+      "url": "/blog/2024/03/2024-03-29-models-designs-legos/",
       "date": "2024-03-29",
       "author": "Lee Calcote",
       "categories": ["meshery","models","designs"],
@@ -256,7 +256,7 @@
     {
       "id": "blog-2024-01-simplifying-cloud-infrastructure-and-kubernetes-management",
       "title": "Simplifying Cloud Infrastructure and Kubernetes Management",
-      "url": "/meshery.io/blog/2024/01/2024-02-17-simplifying-cloud-infrastructure-and-kubernetes-management/",
+      "url": "/blog/2024/01/2024-02-17-simplifying-cloud-infrastructure-and-kubernetes-management/",
       "date": "2024-01-17",
       "author": "James Horton, Lee Calcote",
       "categories": ["cloud","kubernetes"],
@@ -267,7 +267,7 @@
     {
       "id": "blog-2023-12-meshery-v07-release-announcement",
       "title": "Meshery v0.7",
-      "url": "/meshery.io/blog/2023/12/2023-12-22-meshery-v07-release-announcement/",
+      "url": "/blog/2023/12/2023-12-22-meshery-v07-release-announcement/",
       "date": "2023-12-22",
       "author": "Jeremiah Obikoya, Pranav Singh, Hauwa'u Ismail",
       "categories": ["announcements","releases","milestones"],
@@ -278,7 +278,7 @@
     {
       "id": "blog-2023-12-graphql-and-rest-apis",
       "title": "The Synergy of REST and GraphQL APIs in Meshery",
-      "url": "/meshery.io/blog/2023/12/2023-12-08-graphql-and-rest-apis/",
+      "url": "/blog/2023/12/2023-12-08-graphql-and-rest-apis/",
       "date": "2023-12-08",
       "author": "Lee Calcote",
       "categories": ["extensibility"],
@@ -289,7 +289,7 @@
     {
       "id": "blog-2023-09-meshery-badge-program",
       "title": "Meshery Recognition Program",
-      "url": "/meshery.io/blog/2023/09/2023-9-2-meshery-badge-program/",
+      "url": "/blog/2023/09/2023-9-2-meshery-badge-program/",
       "date": "2023-09-01",
       "author": null,
       "categories": ["open-source","community","contributors"],
@@ -300,7 +300,7 @@
     {
       "id": "blog-2023-06-changing-meshery-release-channels",
       "title": "Changing Meshery Release Channels",
-      "url": "/meshery.io/blog/2023/06/2023-06-16-changing-meshery-release-channels/",
+      "url": "/blog/2023/06/2023-06-16-changing-meshery-release-channels/",
       "date": "2023-06-16",
       "author": "Meshery Contributors",
       "categories": ["continuous-integration","releases","mesheryctl"],
@@ -311,7 +311,7 @@
     {
       "id": "blog-2023-01-meshery-system-provider",
       "title": "Meshery System Provider",
-      "url": "/meshery.io/blog/2023/01/2023-01-09-meshery-system-provider/",
+      "url": "/blog/2023/01/2023-01-09-meshery-system-provider/",
       "date": "2023-01-26",
       "author": "Lee Calcote",
       "categories": ["extensibility"],
@@ -322,7 +322,7 @@
     {
       "id": "blog-2022-10-meshery-v0-6-release",
       "title": "Meshery v0.6",
-      "url": "/meshery.io/blog/2022/10/2022-10-24-meshery-v0-6-release/",
+      "url": "/blog/2022/10/2022-10-24-meshery-v0-6-release/",
       "date": "2022-10-24",
       "author": "Meshery Maintainers",
       "categories": ["milestones","releases","announcements"],
@@ -333,7 +333,7 @@
     {
       "id": "blog-2022-01-pipelining-service-mesh-specifications",
       "title": "Pipelining Service Mesh Specifications",
-      "url": "/meshery.io/blog/2022/01/2022-01-26-pipelining-service-mesh-specifications/",
+      "url": "/blog/2022/01/2022-01-26-pipelining-service-mesh-specifications/",
       "date": "2022-01-26",
       "author": "The Newsroom",
       "categories": ["continuous-integration","service-mesh","gitops"],
@@ -344,7 +344,7 @@
     {
       "id": "blog-2021-04-validating-smi-conformance-with-meshery",
       "title": "Validating SMI Conformance with Meshery",
-      "url": "/meshery.io/blog/2021/04/2021-04-26-validating-smi-conformance-with-meshery/",
+      "url": "/blog/2021/04/2021-04-26-validating-smi-conformance-with-meshery/",
       "date": "2021-04-26",
       "author": "Lee Calcote",
       "categories": ["service-mesh","gitops"],
@@ -355,7 +355,7 @@
     {
       "id": "blog-2020-12-service-mesh-offers-promising-solution-for-cloud-native-networking",
       "title": "Service Mesh Offers Promising Solution for Cloud Native Networking",
-      "url": "/meshery.io/blog/2020/12/2020-12-04-service-mesh-offers-promising-solution-for-cloud-native-networking/",
+      "url": "/blog/2020/12/2020-12-04-service-mesh-offers-promising-solution-for-cloud-native-networking/",
       "date": "2020-12-04",
       "author": "The Newsroom",
       "categories": ["announcements","cloud-native"],
@@ -366,7 +366,7 @@
     {
       "id": "blog-2020-12-kubecon-cloudnativecon",
       "title": "KubeCon+CloudNativeCon",
-      "url": "/meshery.io/blog/2020/12/2020-12-02-kubecon-cloudnativecon/",
+      "url": "/blog/2020/12/2020-12-02-kubecon-cloudnativecon/",
       "date": "2020-12-02",
       "author": "The Newsroom",
       "categories": ["events","kubecon"],
@@ -377,7 +377,7 @@
     {
       "id": "blog-2020-07-analyzing-with-smp",
       "title": "Analyzing with SMP",
-      "url": "/meshery.io/blog/2020/07/2020-07-30-analyzing-with-smp/",
+      "url": "/blog/2020/07/2020-07-30-analyzing-with-smp/",
       "date": "2020-07-30",
       "author": "Lee Calcote",
       "categories": ["performance"],
@@ -388,7 +388,7 @@
     {
       "id": "blog-2020-05-meshmark-explained",
       "title": "Meshmark Explained",
-      "url": "/meshery.io/blog/2020/05/2020-05-21-meshmark-explained/",
+      "url": "/blog/2020/05/2020-05-21-meshmark-explained/",
       "date": "2020-05-21",
       "author": "Lee Calcote",
       "categories": ["performance"],
@@ -399,7 +399,7 @@
     {
       "id": "blog-2019-05-a-standard-interface-for-service-meshes",
       "title": "A Standard Interface for Service Meshes",
-      "url": "/meshery.io/blog/2019/05/2019-07-20-a-standard-interface-for-service-meshes/",
+      "url": "/blog/2019/05/2019-07-20-a-standard-interface-for-service-meshes/",
       "date": "2019-05-21",
       "author": "Lee Calcote",
       "categories": ["specification","service-mesh"],

@@ -21,21 +21,21 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="WASM FILTER HTTP Auth FILTER001 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS HTTP AUTH What this filter does Simulates handling authentication of requests at proxy level. Requests with a header token with value hello are accepted as authorized while the rest unauthorized. The actual authentication is handled by the Upstream server. Whenever the proxy receives a request it extracts the token header and makes a request to the Upstream server which validates the token and returns a response. ...read more Caveats and Considerations Test: curl -H &quot;token&quot;:&quot;hello&quot; 0.0.0.0:18000 -v # Authorized curl -H &quot;token&quot;:&quot;world&quot; 0.0.0.0:18000 -v # Unauthorized Technologies Related Design Download Copy URL WASM FILTER TCP Metrics FILTER002 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS TCP METRICS What this filter does Collects simple metrics for every TCP packet and logs it. ...read more Caveats and Considerations Test:curl 0.0.0.0:18000 -v -d &quot;request body&quot;Check the logs for the metrics. Technologies Related Design Download Copy URL WASM FILTER TCP Packet Parse FILTER003 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS TCP PACKET PARSE What this filter does Parses the contents of every TCP packet the proxy receives and logs it. ...read more Caveats and Considerations Test:curl 0.0.0.0:18000 -v -d &quot;request body&quot;Check the logs for the packet contents. Technologies Related Design Download Copy URL WASM FILTER Singleton HTTP Call FILTER004 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS SINGLETON HTTP CALL What this filter does The filter is responsible for intercepting HTTP requests, authorizing them based on the stored cache, and performing rate limiting. In the context of the envoy, this component is an HTTP filter and gets executed in the worker threads. For each request, a context object gets created. ...read more Caveats and Considerations llam tristique tristique condimentum. Maecenas sollicitudin scelerisque egestas. Suspendisse aliquet elit quis dolor gravida, et auctor ligula ornare. Nullam et sodales ante, quis varius elit. Nullam cursus, orci eleifend tristique semper, neque nisl tincidunt purus, sed ultricies felis arcu vel metus. Technologies Related Design Download Copy URL WASM FILTER Metrics Store FILTER005 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS METRICS STORE What this filter does This example showcases communication between a WASM filter and a service via shared queue. It combines the `Singleton-HTTP-Call` and `TCP-Metrics` examples. The filter collects metrics and enqueues it onto the queue while the service dequeues it and sends it to upstream server where it is stored. ...read more Caveats and Considerations Test:curl 0.0.0.0:18000 -v -d &quot;request body&quot; # make a few of these callscurl 0.0.0.0:8080/retrieve -v # Retrieves the stored stats # x | y | z === x : downstream bytes, y : upstream bytes, z: the latency for application server to respond Technologies Related Design Download Copy URL WASM FILTER Singleton Queue FILTER006 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS SINGLETON QUEUE What this filter does An example which depicts an singleton HTTP WASM service which does an HTTP call once every 2 seconds. ...read more Caveats and Considerations Check the logs for the response of the request. Technologies Related Design Download Copy URL WASM FILTER JWT Filter FILTER007 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS JWT FILTER What this filter does Sample configuration to be passed:{&quot;add_header&quot;: [ [&quot;header1&quot;,&quot;value1&quot;], [&quot;header2&quot;,&quot;value2&quot;] ], &quot;del_header&quot;:[ &quot;header1&quot; ],&quot;add_payload&quot;: [ [&quot;payload1&quot;,&quot;value1&quot;], [&quot;payload2&quot;,&quot;value2&quot;],], &quot;del_payload&quot;:[ &quot;payload1&quot;],&quot;payload_to_header&quot;: [&quot;payload2&quot;],&quot;header_to_payload&quot;: [&quot;header2&quot;]} ...read more Caveats and Considerations DISCLAIMER: This filter doesn&#39;t regenerate the signature of the modified JWT, and provides no protections. Proceed with caution. Technologies Related Design Download Copy URL" />
 <meta property="og:description" content="WASM FILTER HTTP Auth FILTER001 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS HTTP AUTH What this filter does Simulates handling authentication of requests at proxy level. Requests with a header token with value hello are accepted as authorized while the rest unauthorized. The actual authentication is handled by the Upstream server. Whenever the proxy receives a request it extracts the token header and makes a request to the Upstream server which validates the token and returns a response. ...read more Caveats and Considerations Test: curl -H &quot;token&quot;:&quot;hello&quot; 0.0.0.0:18000 -v # Authorized curl -H &quot;token&quot;:&quot;world&quot; 0.0.0.0:18000 -v # Unauthorized Technologies Related Design Download Copy URL WASM FILTER TCP Metrics FILTER002 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS TCP METRICS What this filter does Collects simple metrics for every TCP packet and logs it. ...read more Caveats and Considerations Test:curl 0.0.0.0:18000 -v -d &quot;request body&quot;Check the logs for the metrics. Technologies Related Design Download Copy URL WASM FILTER TCP Packet Parse FILTER003 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS TCP PACKET PARSE What this filter does Parses the contents of every TCP packet the proxy receives and logs it. ...read more Caveats and Considerations Test:curl 0.0.0.0:18000 -v -d &quot;request body&quot;Check the logs for the packet contents. Technologies Related Design Download Copy URL WASM FILTER Singleton HTTP Call FILTER004 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS SINGLETON HTTP CALL What this filter does The filter is responsible for intercepting HTTP requests, authorizing them based on the stored cache, and performing rate limiting. In the context of the envoy, this component is an HTTP filter and gets executed in the worker threads. For each request, a context object gets created. ...read more Caveats and Considerations llam tristique tristique condimentum. Maecenas sollicitudin scelerisque egestas. Suspendisse aliquet elit quis dolor gravida, et auctor ligula ornare. Nullam et sodales ante, quis varius elit. Nullam cursus, orci eleifend tristique semper, neque nisl tincidunt purus, sed ultricies felis arcu vel metus. Technologies Related Design Download Copy URL WASM FILTER Metrics Store FILTER005 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS METRICS STORE What this filter does This example showcases communication between a WASM filter and a service via shared queue. It combines the `Singleton-HTTP-Call` and `TCP-Metrics` examples. The filter collects metrics and enqueues it onto the queue while the service dequeues it and sends it to upstream server where it is stored. ...read more Caveats and Considerations Test:curl 0.0.0.0:18000 -v -d &quot;request body&quot; # make a few of these callscurl 0.0.0.0:8080/retrieve -v # Retrieves the stored stats # x | y | z === x : downstream bytes, y : upstream bytes, z: the latency for application server to respond Technologies Related Design Download Copy URL WASM FILTER Singleton Queue FILTER006 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS SINGLETON QUEUE What this filter does An example which depicts an singleton HTTP WASM service which does an HTTP call once every 2 seconds. ...read more Caveats and Considerations Check the logs for the response of the request. Technologies Related Design Download Copy URL WASM FILTER JWT Filter FILTER007 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS JWT FILTER What this filter does Sample configuration to be passed:{&quot;add_header&quot;: [ [&quot;header1&quot;,&quot;value1&quot;], [&quot;header2&quot;,&quot;value2&quot;] ], &quot;del_header&quot;:[ &quot;header1&quot; ],&quot;add_payload&quot;: [ [&quot;payload1&quot;,&quot;value1&quot;], [&quot;payload2&quot;,&quot;value2&quot;],], &quot;del_payload&quot;:[ &quot;payload1&quot;],&quot;payload_to_header&quot;: [&quot;payload2&quot;],&quot;header_to_payload&quot;: [&quot;header2&quot;]} ...read more Caveats and Considerations DISCLAIMER: This filter doesn&#39;t regenerate the signature of the modified JWT, and provides no protections. Proceed with caution. Technologies Related Design Download Copy URL" />
-<link rel="canonical" href="https://saurabhraghuvanshii.github.io/meshery.io/catalog/webassembly" />
-<meta property="og:url" content="https://saurabhraghuvanshii.github.io/meshery.io/catalog/webassembly" />
+<link rel="canonical" href="https://saurabhraghuvanshii.github.io/catalog/webassembly" />
+<meta property="og:url" content="https://saurabhraghuvanshii.github.io/catalog/webassembly" />
 <meta property="og:site_name" content="Meshery" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-04-15T10:23:29+00:00" />
+<meta property="article:published_time" content="2026-04-15T10:38:01+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Cloud Native Catalog" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"The Meshery Authors"},"dateModified":"2026-04-15T10:23:29+00:00","datePublished":"2026-04-15T10:23:29+00:00","description":"WASM FILTER HTTP Auth FILTER001 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS HTTP AUTH What this filter does Simulates handling authentication of requests at proxy level. Requests with a header token with value hello are accepted as authorized while the rest unauthorized. The actual authentication is handled by the Upstream server. Whenever the proxy receives a request it extracts the token header and makes a request to the Upstream server which validates the token and returns a response. ...read more Caveats and Considerations Test: curl -H &quot;token&quot;:&quot;hello&quot; 0.0.0.0:18000 -v # Authorized curl -H &quot;token&quot;:&quot;world&quot; 0.0.0.0:18000 -v # Unauthorized Technologies Related Design Download Copy URL WASM FILTER TCP Metrics FILTER002 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS TCP METRICS What this filter does Collects simple metrics for every TCP packet and logs it. ...read more Caveats and Considerations Test:curl 0.0.0.0:18000 -v -d &quot;request body&quot;Check the logs for the metrics. Technologies Related Design Download Copy URL WASM FILTER TCP Packet Parse FILTER003 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS TCP PACKET PARSE What this filter does Parses the contents of every TCP packet the proxy receives and logs it. ...read more Caveats and Considerations Test:curl 0.0.0.0:18000 -v -d &quot;request body&quot;Check the logs for the packet contents. Technologies Related Design Download Copy URL WASM FILTER Singleton HTTP Call FILTER004 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS SINGLETON HTTP CALL What this filter does The filter is responsible for intercepting HTTP requests, authorizing them based on the stored cache, and performing rate limiting. In the context of the envoy, this component is an HTTP filter and gets executed in the worker threads. For each request, a context object gets created. ...read more Caveats and Considerations llam tristique tristique condimentum. Maecenas sollicitudin scelerisque egestas. Suspendisse aliquet elit quis dolor gravida, et auctor ligula ornare. Nullam et sodales ante, quis varius elit. Nullam cursus, orci eleifend tristique semper, neque nisl tincidunt purus, sed ultricies felis arcu vel metus. Technologies Related Design Download Copy URL WASM FILTER Metrics Store FILTER005 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS METRICS STORE What this filter does This example showcases communication between a WASM filter and a service via shared queue. It combines the `Singleton-HTTP-Call` and `TCP-Metrics` examples. The filter collects metrics and enqueues it onto the queue while the service dequeues it and sends it to upstream server where it is stored. ...read more Caveats and Considerations Test:curl 0.0.0.0:18000 -v -d &quot;request body&quot; # make a few of these callscurl 0.0.0.0:8080/retrieve -v # Retrieves the stored stats # x | y | z === x : downstream bytes, y : upstream bytes, z: the latency for application server to respond Technologies Related Design Download Copy URL WASM FILTER Singleton Queue FILTER006 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS SINGLETON QUEUE What this filter does An example which depicts an singleton HTTP WASM service which does an HTTP call once every 2 seconds. ...read more Caveats and Considerations Check the logs for the response of the request. Technologies Related Design Download Copy URL WASM FILTER JWT Filter FILTER007 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS JWT FILTER What this filter does Sample configuration to be passed:{&quot;add_header&quot;: [ [&quot;header1&quot;,&quot;value1&quot;], [&quot;header2&quot;,&quot;value2&quot;] ], &quot;del_header&quot;:[ &quot;header1&quot; ],&quot;add_payload&quot;: [ [&quot;payload1&quot;,&quot;value1&quot;], [&quot;payload2&quot;,&quot;value2&quot;],], &quot;del_payload&quot;:[ &quot;payload1&quot;],&quot;payload_to_header&quot;: [&quot;payload2&quot;],&quot;header_to_payload&quot;: [&quot;header2&quot;]} ...read more Caveats and Considerations DISCLAIMER: This filter doesn&#39;t regenerate the signature of the modified JWT, and provides no protections. Proceed with caution. Technologies Related Design Download Copy URL","headline":"Cloud Native Catalog","mainEntityOfPage":{"@type":"WebPage","@id":"https://saurabhraghuvanshii.github.io/meshery.io/catalog/webassembly"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://saurabhraghuvanshii.github.io/meshery.io/assets/images/logos/meshery-gradient.png"},"name":"The Meshery Authors"},"url":"https://saurabhraghuvanshii.github.io/meshery.io/catalog/webassembly"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"The Meshery Authors"},"dateModified":"2026-04-15T10:38:01+00:00","datePublished":"2026-04-15T10:38:01+00:00","description":"WASM FILTER HTTP Auth FILTER001 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS HTTP AUTH What this filter does Simulates handling authentication of requests at proxy level. Requests with a header token with value hello are accepted as authorized while the rest unauthorized. The actual authentication is handled by the Upstream server. Whenever the proxy receives a request it extracts the token header and makes a request to the Upstream server which validates the token and returns a response. ...read more Caveats and Considerations Test: curl -H &quot;token&quot;:&quot;hello&quot; 0.0.0.0:18000 -v # Authorized curl -H &quot;token&quot;:&quot;world&quot; 0.0.0.0:18000 -v # Unauthorized Technologies Related Design Download Copy URL WASM FILTER TCP Metrics FILTER002 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS TCP METRICS What this filter does Collects simple metrics for every TCP packet and logs it. ...read more Caveats and Considerations Test:curl 0.0.0.0:18000 -v -d &quot;request body&quot;Check the logs for the metrics. Technologies Related Design Download Copy URL WASM FILTER TCP Packet Parse FILTER003 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS TCP PACKET PARSE What this filter does Parses the contents of every TCP packet the proxy receives and logs it. ...read more Caveats and Considerations Test:curl 0.0.0.0:18000 -v -d &quot;request body&quot;Check the logs for the packet contents. Technologies Related Design Download Copy URL WASM FILTER Singleton HTTP Call FILTER004 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS SINGLETON HTTP CALL What this filter does The filter is responsible for intercepting HTTP requests, authorizing them based on the stored cache, and performing rate limiting. In the context of the envoy, this component is an HTTP filter and gets executed in the worker threads. For each request, a context object gets created. ...read more Caveats and Considerations llam tristique tristique condimentum. Maecenas sollicitudin scelerisque egestas. Suspendisse aliquet elit quis dolor gravida, et auctor ligula ornare. Nullam et sodales ante, quis varius elit. Nullam cursus, orci eleifend tristique semper, neque nisl tincidunt purus, sed ultricies felis arcu vel metus. Technologies Related Design Download Copy URL WASM FILTER Metrics Store FILTER005 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS METRICS STORE What this filter does This example showcases communication between a WASM filter and a service via shared queue. It combines the `Singleton-HTTP-Call` and `TCP-Metrics` examples. The filter collects metrics and enqueues it onto the queue while the service dequeues it and sends it to upstream server where it is stored. ...read more Caveats and Considerations Test:curl 0.0.0.0:18000 -v -d &quot;request body&quot; # make a few of these callscurl 0.0.0.0:8080/retrieve -v # Retrieves the stored stats # x | y | z === x : downstream bytes, y : upstream bytes, z: the latency for application server to respond Technologies Related Design Download Copy URL WASM FILTER Singleton Queue FILTER006 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS SINGLETON QUEUE What this filter does An example which depicts an singleton HTTP WASM service which does an HTTP call once every 2 seconds. ...read more Caveats and Considerations Check the logs for the response of the request. Technologies Related Design Download Copy URL WASM FILTER JWT Filter FILTER007 WASM FILTER &lt;/a&gt; &times; RELATED DESIGNS JWT FILTER What this filter does Sample configuration to be passed:{&quot;add_header&quot;: [ [&quot;header1&quot;,&quot;value1&quot;], [&quot;header2&quot;,&quot;value2&quot;] ], &quot;del_header&quot;:[ &quot;header1&quot; ],&quot;add_payload&quot;: [ [&quot;payload1&quot;,&quot;value1&quot;], [&quot;payload2&quot;,&quot;value2&quot;],], &quot;del_payload&quot;:[ &quot;payload1&quot;],&quot;payload_to_header&quot;: [&quot;payload2&quot;],&quot;header_to_payload&quot;: [&quot;header2&quot;]} ...read more Caveats and Considerations DISCLAIMER: This filter doesn&#39;t regenerate the signature of the modified JWT, and provides no protections. Proceed with caution. Technologies Related Design Download Copy URL","headline":"Cloud Native Catalog","mainEntityOfPage":{"@type":"WebPage","@id":"https://saurabhraghuvanshii.github.io/catalog/webassembly"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://saurabhraghuvanshii.github.io/assets/images/logos/meshery-gradient.png"},"name":"The Meshery Authors"},"url":"https://saurabhraghuvanshii.github.io/catalog/webassembly"}</script>
 <!-- End Jekyll SEO tag -->
- <link type="application/atom+xml" rel="alternate" href="https://saurabhraghuvanshii.github.io/meshery.io/feed.xml" title="Meshery" /> 
-    <link rel="stylesheet" href="/meshery.io/css/stellarnav.css" />
+ <link type="application/atom+xml" rel="alternate" href="https://saurabhraghuvanshii.github.io/feed.xml" title="Meshery" /> 
+    <link rel="stylesheet" href="/css/stellarnav.css" />
     
-    <link rel="stylesheet" href="/meshery.io/css/screen.css" />
-    <link rel="icon" type="image/png" href="/meshery.io/favicon.ico" />
+    <link rel="stylesheet" href="/css/screen.css" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open+Sans"
@@ -53,7 +53,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
-    <link rel="stylesheet" href="/meshery.io/css/subscribe.css" />
+    <link rel="stylesheet" href="/css/subscribe.css" />
 
 	
     
@@ -78,7 +78,7 @@
 
       <script>
         
-        window.siteBaseUrl = "/meshery.io";
+        window.siteBaseUrl = "";
 
         const body = document.body;
     
@@ -137,11 +137,11 @@
     <div class="container nav-container">
   
       <div class="project-name">
-        <a href="/meshery.io/">
-          <img src="/meshery.io/assets/images/logos/meshery-logo.png" alt="Meshery Logo" />&nbsp;
-          <img src="/meshery.io/assets/images/logos/meshery-logo-text.png"
-            data-logo-for-dark="/meshery.io/assets/images/logos/meshery-logo-text.png"
-            data-logo-for-light="/meshery.io/assets/images/logos/meshery-logo-text-dark.png" alt="Meshery Logo"
+        <a href="/">
+          <img src="/assets/images/logos/meshery-logo.png" alt="Meshery Logo" />&nbsp;
+          <img src="/assets/images/logos/meshery-logo-text.png"
+            data-logo-for-dark="/assets/images/logos/meshery-logo-text.png"
+            data-logo-for-light="/assets/images/logos/meshery-logo-text-dark.png" alt="Meshery Logo"
             id="logo-dark-light" />
         </a>
       </div>
@@ -166,7 +166,7 @@
 				
 				
 							
-				<a href="/meshery.io/catalog
+				<a href="/catalog
 "   class="nav-text"
 					>
 					Catalog
@@ -214,7 +214,7 @@
 							
 					
 							
-				<a href="/meshery.io/community
+				<a href="/community
 "   class="nav-text"
 					>
 					Community
@@ -225,8 +225,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/community.svg">
-							<a href="/community" 
+								<img class="nav-img" src="/assets/images/nav-icons/community.svg
+">
+							<a href="/community
+" 
 							class="subnav-item">Participate
 							
 							</a>
@@ -235,8 +237,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/Calendar.svg">
-							<a href="/calendar" 
+								<img class="nav-img" src="/assets/images/nav-icons/Calendar.svg
+">
+							<a href="/calendar
+" 
 							class="subnav-item">Calendar
 							
 							</a>
@@ -245,8 +249,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/community.svg">
-							<a href="/community/newcomers" 
+								<img class="nav-img" src="/assets/images/nav-icons/community.svg
+">
+							<a href="/community/newcomers
+" 
 							class="subnav-item">Newcomers
 							
 							</a>
@@ -255,8 +261,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/Programs.svg">
-							<a href="/programs" 
+								<img class="nav-img" src="/assets/images/nav-icons/Programs.svg
+">
+							<a href="/programs
+" 
 							class="subnav-item">Programs
 							
 							</a>
@@ -265,8 +273,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/Mail.svg">
-							<a href="/subscribe" 
+								<img class="nav-img" src="/assets/images/nav-icons/Mail.svg
+">
+							<a href="/subscribe
+" 
 							class="subnav-item">Mailing Lists
 							
 							</a>
@@ -275,8 +285,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/Recognition.svg">
-							<a href="/community/badges" 
+								<img class="nav-img" src="/assets/images/nav-icons/Recognition.svg
+">
+							<a href="/community/badges
+" 
 							class="subnav-item">Recognition
 							
 							</a>
@@ -285,8 +297,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/Discuss.svg">
-							<a href="/community#discussion-forums" 
+								<img class="nav-img" src="/assets/images/nav-icons/Discuss.svg
+">
+							<a href="/community#discussion-forums
+" 
 							class="subnav-item">Discussion forums
 							
 							</a>
@@ -295,8 +309,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/Github.svg">
-							<a href="https://github.com/meshery" target="_blank" 
+								<img class="nav-img" src="/assets/images/nav-icons/Github.svg
+">
+							<a href="https://github.com/meshery
+" target="_blank" 
 							class="subnav-item">GitHub
 							
 							<img src="/assets/images/buttons/external-link_gray.svg" alt="Link Icon" class="nav-sublink-logo">
@@ -307,8 +323,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/Slack.svg">
-							<a href="https://slack.meshery.io" target="_blank" 
+								<img class="nav-img" src="/assets/images/nav-icons/Slack.svg
+">
+							<a href="https://slack.meshery.io
+" target="_blank" 
 							class="subnav-item">Slack
 							
 							<img src="/assets/images/buttons/external-link_gray.svg" alt="Link Icon" class="nav-sublink-logo">
@@ -319,8 +337,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/Youtube.svg">
-							<a href="https://www.youtube.com/channel/UCgXlqWDCg-9RP1eckf0s6KA?sub_confirmation=1" target="_blank" 
+								<img class="nav-img" src="/assets/images/nav-icons/Youtube.svg
+">
+							<a href="https://www.youtube.com/channel/UCgXlqWDCg-9RP1eckf0s6KA?sub_confirmation=1
+" target="_blank" 
 							class="subnav-item">Youtube
 							
 							<img src="/assets/images/buttons/external-link_gray.svg" alt="Link Icon" class="nav-sublink-logo">
@@ -359,8 +379,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/Presentation.svg">
-							<a href="/talks-and-trainings" 
+								<img class="nav-img" src="/assets/images/nav-icons/Presentation.svg
+">
+							<a href="/talks-and-trainings
+" 
 							class="subnav-item">Talks and Trainings
 							
 							</a>
@@ -369,8 +391,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/Blog.svg">
-							<a href="/blog" 
+								<img class="nav-img" src="/assets/images/nav-icons/Blog.svg
+">
+							<a href="/blog
+" 
 							class="subnav-item">Blog
 							
 							</a>
@@ -379,8 +403,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/meshery-extensions.svg">
-							<a href="/extensions" 
+								<img class="nav-img" src="/assets/images/nav-icons/meshery-extensions.svg
+">
+							<a href="/extensions
+" 
 							class="subnav-item">Extensions
 							
 							</a>
@@ -389,8 +415,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/Contribute.svg">
-							<a href="https://docs.meshery.io/project/contributing" target="_blank" 
+								<img class="nav-img" src="/assets/images/nav-icons/Contribute.svg
+">
+							<a href="https://docs.meshery.io/project/contributing
+" target="_blank" 
 							class="subnav-item">Contributing
 							
 							<img src="/assets/images/buttons/external-link_gray.svg" alt="Link Icon" class="nav-sublink-logo">
@@ -401,8 +429,10 @@
 					
 					<li >
 						<div  class="sub-nav-li" >
-								<img class="nav-img" src="/assets/images/nav-icons/meshery.svg">
-							<a href="/brand" 
+								<img class="nav-img" src="/assets/images/nav-icons/meshery.svg
+">
+							<a href="/brand
+" 
 							class="subnav-item">Branding
 							
 							</a>
@@ -417,7 +447,7 @@
 				
 				
 							
-				<a href="/meshery.io/#getting-started
+				<a href="/#getting-started
 "   class="nav-text highlight"
 					>
 					Getting Started
@@ -432,9 +462,9 @@
 </nav>
       <button class="nav-mode-icon" id="mode-toggle-btn" style="text-align: center; background: transparent;">
         <img class="nav-text" id="logo-dark-light"
-          src="/meshery.io/assets/images/nav-icons/mode-toggle-icon-moon.png"
-          data-logo-for-dark="/meshery.io/assets/images/nav-icons/mode-toggle-icon-moon.png"
-          data-logo-for-light="/meshery.io/assets/images/nav-icons/mode-toggle-icon-sun.png" alt="theme-logo" />
+          src="/assets/images/nav-icons/mode-toggle-icon-moon.png"
+          data-logo-for-dark="/assets/images/nav-icons/mode-toggle-icon-moon.png"
+          data-logo-for-light="/assets/images/nav-icons/mode-toggle-icon-sun.png" alt="theme-logo" />
       </button>
     </div>
   </header>
@@ -767,13 +797,13 @@
             <h3>Meshery UI</h3>
             <p>To import designs, visit <a href="https://docs.meshery.io/extensions/importing-a-design" target="_blank">docs</a></p>
             
-            <!-- <a href="/meshery.io/assets/images/screens/pattern-import.mp4"
+            <!-- <a href="/assets/images/screens/pattern-import.mp4"
 				data-fancybox="images" data-caption="Import your patterns"> -->
         <div style="text-align: center;">
           <video class="help-modal__video" preload="metadata" controls>
-            <source src="/meshery.io/assets/images/screens/pattern-import.mp4#t=0.01" type="video/mp4">
+            <source src="/assets/images/screens/pattern-import.mp4#t=0.01" type="video/mp4">
           </video>
-				<!-- <iframe width="98%" height="540" preload="metadata" src="/meshery.io/assets/images/screens/pattern-import.mp4#t=0.01" alt="Import your patterns" 
+				<!-- <iframe width="98%" height="540" preload="metadata" src="/assets/images/screens/pattern-import.mp4#t=0.01" alt="Import your patterns" 
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen	></iframe> -->
@@ -833,7 +863,7 @@
 </div>
 </div>
 
-<script src="/meshery.io/assets/js/help-modal.js"></script>
+<script src="/assets/js/help-modal.js"></script>
 <script>
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
@@ -859,7 +889,7 @@ function openTab(evt, tabName) {
       data-target="designs-tab"
     >
       <a
-        href="/meshery.io/catalog/designs"
+        href="/catalog/designs"
         target="_blank"
         style="
           position: absolute;
@@ -899,19 +929,19 @@ function openTab(evt, tabName) {
             <div class="circle"></div>
             <div class="hover-circles">
               <div class="circle">
-                <img src="/meshery.io/assets/images/logos/service-mesh-pattern.svg" />
+                <img src="/assets/images/logos/service-mesh-pattern.svg" />
               </div>
               <div class="circle">
-                <img src="/meshery.io/assets/images/logos/service-mesh-pattern.svg" />
+                <img src="/assets/images/logos/service-mesh-pattern.svg" />
               </div>
               <div class="circle">
-                <img src="/meshery.io/assets/images/logos/service-mesh-pattern.svg" />
+                <img src="/assets/images/logos/service-mesh-pattern.svg" />
               </div>
               <div class="circle">
-                <img src="/meshery.io/assets/images/logos/service-mesh-pattern.svg" />
+                <img src="/assets/images/logos/service-mesh-pattern.svg" />
               </div>
               <div class="circle">
-                <img src="/meshery.io/assets/images/logos/service-mesh-pattern.svg" />
+                <img src="/assets/images/logos/service-mesh-pattern.svg" />
               </div>
             </div>
           </div>
@@ -992,7 +1022,7 @@ function openTab(evt, tabName) {
       data-target="models-tab"
     >
       <a
-        href="/meshery.io/catalog/models"
+        href="/catalog/models"
         target="_blank"
         style="
           position: absolute;
@@ -1031,19 +1061,19 @@ function openTab(evt, tabName) {
             <div class="circle"></div>
             <div class="hover-circles">
               <div class="circle">
-                <img src="/meshery.io/assets/images/logos/meshery-logo.png" />
+                <img src="/assets/images/logos/meshery-logo.png" />
               </div>
               <div class="circle">
-                <img src="/meshery.io/assets/images/logos/meshery-logo.png" />
+                <img src="/assets/images/logos/meshery-logo.png" />
               </div>
               <div class="circle">
-                <img src="/meshery.io/assets/images/logos/meshery-logo.png" />
+                <img src="/assets/images/logos/meshery-logo.png" />
               </div>
               <div class="circle">
-                <img src="/meshery.io/assets/images/logos/meshery-logo.png" />
+                <img src="/assets/images/logos/meshery-logo.png" />
               </div>
               <div class="circle">
-                <img src="/meshery.io/assets/images/logos/meshery-logo.png" />
+                <img src="/assets/images/logos/meshery-logo.png" />
               </div>
             </div>
           </div>
@@ -1123,7 +1153,7 @@ function openTab(evt, tabName) {
     
     <h6 class="pattern-id">
       <img class="wasm"
-        src="/meshery.io/assets/images/webassembly_logo.svg"
+        src="/assets/images/webassembly_logo.svg"
         loading="lazy" />
       FILTER001
     </h6>
@@ -1145,7 +1175,7 @@ function openTab(evt, tabName) {
     <div class="modal-header">
       <div class="chip chip-modal">
         
-        <a href="/meshery.io/catalog/webassembly">
+        <a href="/catalog/webassembly">
           <h6 class="pattern-type">WASM FILTER</h6>
         </a>
         
@@ -1864,9 +1894,10 @@ function openTab(evt, tabName) {
     <div class="vertical-line"></div>
     <div class="modal-info">
       <h2 class="modal-h2">
+        
         <a href="/catalog//.html" target="_blank" style="font-size: 1.5rem">
            HTTP AUTH
-            <img class="internal-link" src="/meshery.io/assets/images/buttons/external-link_black.svg" />
+            <img class="internal-link" src="/assets/images/buttons/external-link_black.svg" />
         </a>
       </h2>
       
@@ -2608,7 +2639,8 @@ function openTab(evt, tabName) {
         
 
        
-        <a href="/catalog//https://github.com/layer5io/wasm-filters/releases/download/v0.2.3/http_auth_bg.wasm" download="HTTP Auth.yml">
+        
+        <a href="/catalog/https://github.com/layer5io/wasm-filters/releases/download/v0.2.3/http_auth_bg.wasm" download="HTTP Auth.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
             class="import" style="width: 7rem;">
             Download
@@ -2650,14 +2682,14 @@ function openTab(evt, tabName) {
   // Lazy load the catalog-modal.js script
   function loadCatalogModalScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/catalog-modal.js";
+    script.src = "/assets/js/catalog-modal.js";
     document.body.appendChild(script);
   }
 
   // Lazy load the thumbnail-clickable.js script
   function loadThumbnailClickableScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/thumbnail-clickable.js";
+    script.src = "/assets/js/thumbnail-clickable.js";
     document.body.appendChild(script);
   }
 
@@ -2739,7 +2771,7 @@ function openTab(evt, tabName) {
     
     <h6 class="pattern-id">
       <img class="wasm"
-        src="/meshery.io/assets/images/webassembly_logo.svg"
+        src="/assets/images/webassembly_logo.svg"
         loading="lazy" />
       FILTER002
     </h6>
@@ -2761,7 +2793,7 @@ function openTab(evt, tabName) {
     <div class="modal-header">
       <div class="chip chip-modal">
         
-        <a href="/meshery.io/catalog/webassembly">
+        <a href="/catalog/webassembly">
           <h6 class="pattern-type">WASM FILTER</h6>
         </a>
         
@@ -3480,9 +3512,10 @@ function openTab(evt, tabName) {
     <div class="vertical-line"></div>
     <div class="modal-info">
       <h2 class="modal-h2">
+        
         <a href="/catalog//.html" target="_blank" style="font-size: 1.5rem">
            TCP METRICS
-            <img class="internal-link" src="/meshery.io/assets/images/buttons/external-link_black.svg" />
+            <img class="internal-link" src="/assets/images/buttons/external-link_black.svg" />
         </a>
       </h2>
       
@@ -4224,7 +4257,8 @@ function openTab(evt, tabName) {
         
 
        
-        <a href="/catalog//https://github.com/layer5io/wasm-filters/releases/download/v0.2.3/tcp_metrics_bg.wasm" download="TCP Metrics.yml">
+        
+        <a href="/catalog/https://github.com/layer5io/wasm-filters/releases/download/v0.2.3/tcp_metrics_bg.wasm" download="TCP Metrics.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
             class="import" style="width: 7rem;">
             Download
@@ -4266,14 +4300,14 @@ function openTab(evt, tabName) {
   // Lazy load the catalog-modal.js script
   function loadCatalogModalScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/catalog-modal.js";
+    script.src = "/assets/js/catalog-modal.js";
     document.body.appendChild(script);
   }
 
   // Lazy load the thumbnail-clickable.js script
   function loadThumbnailClickableScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/thumbnail-clickable.js";
+    script.src = "/assets/js/thumbnail-clickable.js";
     document.body.appendChild(script);
   }
 
@@ -4355,7 +4389,7 @@ function openTab(evt, tabName) {
     
     <h6 class="pattern-id">
       <img class="wasm"
-        src="/meshery.io/assets/images/webassembly_logo.svg"
+        src="/assets/images/webassembly_logo.svg"
         loading="lazy" />
       FILTER003
     </h6>
@@ -4377,7 +4411,7 @@ function openTab(evt, tabName) {
     <div class="modal-header">
       <div class="chip chip-modal">
         
-        <a href="/meshery.io/catalog/webassembly">
+        <a href="/catalog/webassembly">
           <h6 class="pattern-type">WASM FILTER</h6>
         </a>
         
@@ -5096,9 +5130,10 @@ function openTab(evt, tabName) {
     <div class="vertical-line"></div>
     <div class="modal-info">
       <h2 class="modal-h2">
+        
         <a href="/catalog//.html" target="_blank" style="font-size: 1.5rem">
            TCP PACKET PARSE
-            <img class="internal-link" src="/meshery.io/assets/images/buttons/external-link_black.svg" />
+            <img class="internal-link" src="/assets/images/buttons/external-link_black.svg" />
         </a>
       </h2>
       
@@ -5840,7 +5875,8 @@ function openTab(evt, tabName) {
         
 
        
-        <a href="/catalog//https://github.com/layer5io/wasm-filters/releases/download/v0.2.3/tcp_packet_parse_bg.wasm" download="TCP Packet Parse.yml">
+        
+        <a href="/catalog/https://github.com/layer5io/wasm-filters/releases/download/v0.2.3/tcp_packet_parse_bg.wasm" download="TCP Packet Parse.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
             class="import" style="width: 7rem;">
             Download
@@ -5882,14 +5918,14 @@ function openTab(evt, tabName) {
   // Lazy load the catalog-modal.js script
   function loadCatalogModalScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/catalog-modal.js";
+    script.src = "/assets/js/catalog-modal.js";
     document.body.appendChild(script);
   }
 
   // Lazy load the thumbnail-clickable.js script
   function loadThumbnailClickableScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/thumbnail-clickable.js";
+    script.src = "/assets/js/thumbnail-clickable.js";
     document.body.appendChild(script);
   }
 
@@ -5971,7 +6007,7 @@ function openTab(evt, tabName) {
     
     <h6 class="pattern-id">
       <img class="wasm"
-        src="/meshery.io/assets/images/webassembly_logo.svg"
+        src="/assets/images/webassembly_logo.svg"
         loading="lazy" />
       FILTER004
     </h6>
@@ -5993,7 +6029,7 @@ function openTab(evt, tabName) {
     <div class="modal-header">
       <div class="chip chip-modal">
         
-        <a href="/meshery.io/catalog/webassembly">
+        <a href="/catalog/webassembly">
           <h6 class="pattern-type">WASM FILTER</h6>
         </a>
         
@@ -6712,9 +6748,10 @@ function openTab(evt, tabName) {
     <div class="vertical-line"></div>
     <div class="modal-info">
       <h2 class="modal-h2">
+        
         <a href="/catalog//.html" target="_blank" style="font-size: 1.5rem">
            SINGLETON HTTP CALL
-            <img class="internal-link" src="/meshery.io/assets/images/buttons/external-link_black.svg" />
+            <img class="internal-link" src="/assets/images/buttons/external-link_black.svg" />
         </a>
       </h2>
       
@@ -7456,7 +7493,8 @@ function openTab(evt, tabName) {
         
 
        
-        <a href="/catalog//https://raw.githubusercontent.com/layer5io/wasm-filters/master/singleton_http_call_bg.wasm" download="Singleton HTTP Call.yml">
+        
+        <a href="/catalog/https://raw.githubusercontent.com/layer5io/wasm-filters/master/singleton_http_call_bg.wasm" download="Singleton HTTP Call.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
             class="import" style="width: 7rem;">
             Download
@@ -7498,14 +7536,14 @@ function openTab(evt, tabName) {
   // Lazy load the catalog-modal.js script
   function loadCatalogModalScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/catalog-modal.js";
+    script.src = "/assets/js/catalog-modal.js";
     document.body.appendChild(script);
   }
 
   // Lazy load the thumbnail-clickable.js script
   function loadThumbnailClickableScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/thumbnail-clickable.js";
+    script.src = "/assets/js/thumbnail-clickable.js";
     document.body.appendChild(script);
   }
 
@@ -7587,7 +7625,7 @@ function openTab(evt, tabName) {
     
     <h6 class="pattern-id">
       <img class="wasm"
-        src="/meshery.io/assets/images/webassembly_logo.svg"
+        src="/assets/images/webassembly_logo.svg"
         loading="lazy" />
       FILTER005
     </h6>
@@ -7609,7 +7647,7 @@ function openTab(evt, tabName) {
     <div class="modal-header">
       <div class="chip chip-modal">
         
-        <a href="/meshery.io/catalog/webassembly">
+        <a href="/catalog/webassembly">
           <h6 class="pattern-type">WASM FILTER</h6>
         </a>
         
@@ -8328,9 +8366,10 @@ function openTab(evt, tabName) {
     <div class="vertical-line"></div>
     <div class="modal-info">
       <h2 class="modal-h2">
+        
         <a href="/catalog//.html" target="_blank" style="font-size: 1.5rem">
            METRICS STORE
-            <img class="internal-link" src="/meshery.io/assets/images/buttons/external-link_black.svg" />
+            <img class="internal-link" src="/assets/images/buttons/external-link_black.svg" />
         </a>
       </h2>
       
@@ -9072,7 +9111,8 @@ function openTab(evt, tabName) {
         
 
        
-        <a href="/catalog//https://github.com/layer5io/wasm-filters/releases/download/v0.2.3/metrics_collector_bg.wasm" download="Metrics Store.yml">
+        
+        <a href="/catalog/https://github.com/layer5io/wasm-filters/releases/download/v0.2.3/metrics_collector_bg.wasm" download="Metrics Store.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
             class="import" style="width: 7rem;">
             Download
@@ -9114,14 +9154,14 @@ function openTab(evt, tabName) {
   // Lazy load the catalog-modal.js script
   function loadCatalogModalScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/catalog-modal.js";
+    script.src = "/assets/js/catalog-modal.js";
     document.body.appendChild(script);
   }
 
   // Lazy load the thumbnail-clickable.js script
   function loadThumbnailClickableScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/thumbnail-clickable.js";
+    script.src = "/assets/js/thumbnail-clickable.js";
     document.body.appendChild(script);
   }
 
@@ -9203,7 +9243,7 @@ function openTab(evt, tabName) {
     
     <h6 class="pattern-id">
       <img class="wasm"
-        src="/meshery.io/assets/images/webassembly_logo.svg"
+        src="/assets/images/webassembly_logo.svg"
         loading="lazy" />
       FILTER006
     </h6>
@@ -9225,7 +9265,7 @@ function openTab(evt, tabName) {
     <div class="modal-header">
       <div class="chip chip-modal">
         
-        <a href="/meshery.io/catalog/webassembly">
+        <a href="/catalog/webassembly">
           <h6 class="pattern-type">WASM FILTER</h6>
         </a>
         
@@ -9944,9 +9984,10 @@ function openTab(evt, tabName) {
     <div class="vertical-line"></div>
     <div class="modal-info">
       <h2 class="modal-h2">
+        
         <a href="/catalog//.html" target="_blank" style="font-size: 1.5rem">
            SINGLETON QUEUE
-            <img class="internal-link" src="/meshery.io/assets/images/buttons/external-link_black.svg" />
+            <img class="internal-link" src="/assets/images/buttons/external-link_black.svg" />
         </a>
       </h2>
       
@@ -10688,7 +10729,8 @@ function openTab(evt, tabName) {
         
 
        
-        <a href="/catalog//https://github.com/layer5io/wasm-filters/releases/download/v0.2.3/singleton_http_call_bg.wasm" download="Singleton Queue.yml">
+        
+        <a href="/catalog/https://github.com/layer5io/wasm-filters/releases/download/v0.2.3/singleton_http_call_bg.wasm" download="Singleton Queue.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
             class="import" style="width: 7rem;">
             Download
@@ -10730,14 +10772,14 @@ function openTab(evt, tabName) {
   // Lazy load the catalog-modal.js script
   function loadCatalogModalScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/catalog-modal.js";
+    script.src = "/assets/js/catalog-modal.js";
     document.body.appendChild(script);
   }
 
   // Lazy load the thumbnail-clickable.js script
   function loadThumbnailClickableScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/thumbnail-clickable.js";
+    script.src = "/assets/js/thumbnail-clickable.js";
     document.body.appendChild(script);
   }
 
@@ -10819,7 +10861,7 @@ function openTab(evt, tabName) {
     
     <h6 class="pattern-id">
       <img class="wasm"
-        src="/meshery.io/assets/images/webassembly_logo.svg"
+        src="/assets/images/webassembly_logo.svg"
         loading="lazy" />
       FILTER007
     </h6>
@@ -10841,7 +10883,7 @@ function openTab(evt, tabName) {
     <div class="modal-header">
       <div class="chip chip-modal">
         
-        <a href="/meshery.io/catalog/webassembly">
+        <a href="/catalog/webassembly">
           <h6 class="pattern-type">WASM FILTER</h6>
         </a>
         
@@ -11560,9 +11602,10 @@ function openTab(evt, tabName) {
     <div class="vertical-line"></div>
     <div class="modal-info">
       <h2 class="modal-h2">
+        
         <a href="/catalog//.html" target="_blank" style="font-size: 1.5rem">
            JWT FILTER
-            <img class="internal-link" src="/meshery.io/assets/images/buttons/external-link_black.svg" />
+            <img class="internal-link" src="/assets/images/buttons/external-link_black.svg" />
         </a>
       </h2>
       
@@ -12304,7 +12347,8 @@ function openTab(evt, tabName) {
         
 
        
-        <a href="/catalog//https://github.com/layer5io/wasm-filters/releases/download/v0.2.3/jwt_filter_bg.wasm" download="JWT Filter.yml">
+        
+        <a href="/catalog/https://github.com/layer5io/wasm-filters/releases/download/v0.2.3/jwt_filter_bg.wasm" download="JWT Filter.yml">
           <button id="resourceDownloadBtn" data-patternId="" onclick="sendCloudTelemetry()"
             class="import" style="width: 7rem;">
             Download
@@ -12346,14 +12390,14 @@ function openTab(evt, tabName) {
   // Lazy load the catalog-modal.js script
   function loadCatalogModalScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/catalog-modal.js";
+    script.src = "/assets/js/catalog-modal.js";
     document.body.appendChild(script);
   }
 
   // Lazy load the thumbnail-clickable.js script
   function loadThumbnailClickableScript() {
     const script = document.createElement("script");
-    script.src = "/meshery.io/assets/js/thumbnail-clickable.js";
+    script.src = "/assets/js/thumbnail-clickable.js";
     document.body.appendChild(script);
   }
 
@@ -12655,7 +12699,7 @@ function openTab(evt, tabName) {
 					<h2>
 						
 						<a target="_blank"  
-						href="/meshery.io/community
+						href="/community
 " class="community-icon" >
 						
 						
@@ -12666,7 +12710,7 @@ function openTab(evt, tabName) {
 				</li>
 				
 				<li><a 
-						href="/meshery.io/blog
+						href="/blog
 " class="blog-icon" >
 						
 						
@@ -12677,7 +12721,7 @@ function openTab(evt, tabName) {
 						Blog</a></li>
 				
 				<li><a 
-						href="/meshery.io/subscribe
+						href="/subscribe
 " class="mail-icon" >
 						
 						
@@ -12688,7 +12732,7 @@ function openTab(evt, tabName) {
 						Mailing Lists</a></li>
 				
 				<li><a 
-						href="/meshery.io/calendar
+						href="/calendar
 " class="calendar-icon" >
 						
 						
@@ -12699,7 +12743,7 @@ function openTab(evt, tabName) {
 						Calendar</a></li>
 				
 				<li><a target="_blank" 
-						href="/meshery.io/programs
+						href="/programs
 " class="internship-icon" >
 						
 						
@@ -12710,7 +12754,7 @@ function openTab(evt, tabName) {
 						Internships</a></li>
 				
 				<li><a target="_blank" 
-						href="/meshery.io/community#discussion-forums
+						href="/community#discussion-forums
 " class="forum-icon" >
 						
 						
@@ -12727,7 +12771,7 @@ function openTab(evt, tabName) {
 					<h2>
 						
 						<a  
-						href="/meshery.io/#getting-started
+						href="/#getting-started
 " >
 						
 						Getting Started</a>
@@ -12735,19 +12779,19 @@ function openTab(evt, tabName) {
 				</li>
 				
 				<li><a 
-						href="/meshery.io/features
+						href="/features
 " >
 						
 						Features</a></li>
 				
 				<li><a 
-						href="/meshery.io/#getting-started
+						href="/#getting-started
 " >
 						
 						Run Meshery</a></li>
 				
 				<li><a target="_blank" 
-						href="/meshery.io/integrations
+						href="/integrations
 " >
 						
 						Integrations</a></li>
@@ -12765,7 +12809,7 @@ function openTab(evt, tabName) {
 					<h2>
 						
 						<a  
-						href="/meshery.io/community#resources
+						href="/community#resources
 " >
 						
 						Resources</a>
@@ -12779,7 +12823,7 @@ function openTab(evt, tabName) {
 						Docs</a></li>
 				
 				<li><a 
-						href="/meshery.io/catalog
+						href="/catalog
 " >
 						
 						Meshery Catalog</a></li>
@@ -12791,7 +12835,7 @@ function openTab(evt, tabName) {
 						User Tutorials</a></li>
 				
 				<li><a 
-						href="/meshery.io/talks-and-trainings#trainings
+						href="/talks-and-trainings#trainings
 " >
 						
 						Contributor Trainings</a></li>
@@ -12920,10 +12964,10 @@ function openTab(evt, tabName) {
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script src="/meshery.io/js/stellarnav.min.js"></script>
+<script src="/js/stellarnav.min.js"></script>
 
 
-<script src="/meshery.io/js/main.js"></script>
+<script src="/js/main.js"></script>
 
 <!-- Site Navigation Menu -->
 <script type="text/javascript">
@@ -12934,7 +12978,7 @@ function openTab(evt, tabName) {
 </script>
 <!--Script for Copy to Clipboard-->
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-<script src="/meshery.io/js/vanilla-tilt.min.js"></script>
+<script src="/js/vanilla-tilt.min.js"></script>
 
 <script>
 
