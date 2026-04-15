@@ -34,20 +34,15 @@ jobs:
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production
-          JEKYLL_SITE_URL: ${{ vars.JEKYLL_SITE_URL || format('https://{0}.github.io', github.repository_owner) }}
-          JEKYLL_BASEURL: ${{ vars.JEKYLL_BASEURL || '' }}
         run: |
           cat > _config.ci.yml <<EOF
-          url: "${JEKYLL_SITE_URL}"
-          baseurl: "${JEKYLL_BASEURL}"
+          url: "https://drawnew.xyz"
+          baseurl: ""
           EOF
 
           bundle exec jekyll build --config _config.yml,_config.ci.yml
 
-          if [ -n "${JEKYLL_SITE_URL}" ] && [[ "${JEKYLL_SITE_URL}" != *"github.io"* ]]; then
-            DOMAIN=$(echo $JEKYLL_SITE_URL | sed -E 's|https?://||')
-            echo "$DOMAIN" > _site/CNAME
-          fi
+          echo "drawnew.xyz" > _site/CNAME
 
           touch _site/.nojekyll
 
