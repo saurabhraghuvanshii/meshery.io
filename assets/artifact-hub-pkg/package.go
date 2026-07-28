@@ -258,10 +258,11 @@ patternInfo: |
   %s
 patternCaveats: |
   %s
+createdAt: %s
 permalink: catalog/%s/%s-%s.html
 URL: 'https://raw.githubusercontent.com/meshery/meshery.io/master/%s/%s/%s/design.yml'
 downloadLink: %s/design.yml
----`, strings.TrimSpace(string(nameYAML)), version, pattern.UserId.String(), userFullName, userAvatarURL, patternType, compatibility, patternID, patternImageURL, patternInfo, patternCaveats, patternType, slugify(patternName), patternID, mesheryCatalogFilesDir, patternID, version, patternID)
+---`, strings.TrimSpace(string(nameYAML)), version, pattern.UserId.String(), userFullName, userAvatarURL, patternType, compatibility, patternID, patternImageURL, patternInfo, patternCaveats, createdAt.Format(time.RFC3339), patternType, slugify(patternName), patternID, mesheryCatalogFilesDir, patternID, version, patternID)
 
 	mdPath := filepath.Join("..", "..", "collections", "_catalog", patternType, patternID+".md")
 	if err := os.WriteFile(mdPath, []byte(content), 0644); err != nil {
@@ -287,7 +288,7 @@ func userDisplay(user *userv1beta2.User) (string, string) {
 
 func invokeGitHubAction(contentID, assetLocation string, ghAccessToken string) error {
 	payload := fmt.Sprintf(`{"ref":"master","inputs":{"contentID":"%s","assetLocation":"%s"}}`, contentID, assetLocation)
-	req, err := http.NewRequest("POST", "https://api.github.com/repos/meshery/meshery.io/actions/workflows/kanvas.yml/dispatches", bytes.NewBuffer([]byte(payload)))
+	req, err := http.NewRequest("POST", "https://api.github.com/repos/meshery/meshery.io/actions/workflows/snapshot.yml/dispatches", bytes.NewBuffer([]byte(payload)))
 	if err != nil {
 		return meshkitErrors.New(ErrCreateGitHubRequestCode, meshkitErrors.Alert,
 			[]string{"Error creating GitHub Actions request"},
